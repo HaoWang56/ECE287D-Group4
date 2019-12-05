@@ -1,5 +1,5 @@
 Analysis & Synthesis report for game
-Sun Nov 24 17:02:29 2019
+Thu Dec 05 16:58:13 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -26,18 +26,25 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
  18. Parameter Settings for User Entity Instance: ps2_keyboard:inst2|debounce:debounce_ps2_clk
  19. Parameter Settings for User Entity Instance: ps2_keyboard:inst2|debounce:debounce_ps2_data
  20. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod0
- 21. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div0
- 22. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod1
- 23. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div1
- 24. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod2
- 25. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div2
- 26. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod3
- 27. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div3
- 28. Port Connectivity Checks: "altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1"
- 29. Port Connectivity Checks: "altpll0:inst6|altpll0_altpll_0:altpll_0"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
+ 21. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod1
+ 22. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div0
+ 23. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod2
+ 24. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div1
+ 25. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod3
+ 26. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div2
+ 27. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod4
+ 28. Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div3
+ 29. Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD6"
+ 30. Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD5"
+ 31. Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD4"
+ 32. Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD2"
+ 33. Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD1"
+ 34. Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD0"
+ 35. Port Connectivity Checks: "altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1"
+ 36. Port Connectivity Checks: "altpll0:inst6|altpll0_altpll_0:altpll_0"
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
 
 
 
@@ -64,15 +71,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 24 17:02:29 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 05 16:58:13 2019       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; game                                        ;
 ; Top-level Entity Name              ; game                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4,158                                       ;
-;     Total combinational functions  ; 4,099                                       ;
-;     Dedicated logic registers      ; 361                                         ;
-; Total registers                    ; 361                                         ;
+; Total logic elements               ; 4,877                                       ;
+;     Total combinational functions  ; 4,820                                       ;
+;     Dedicated logic registers      ; 362                                         ;
+; Total registers                    ; 362                                         ;
 ; Total pins                         ; 77                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -198,6 +205,7 @@ agreement for further details.
 ; game.bdf                                        ; yes             ; User Block Diagram/Schematic File  ; M:/ECE287/game/game.bdf                                                    ;         ;
 ; ps2_keyboard.vhd                                ; yes             ; User VHDL File                     ; M:/ECE287/game/ps2_keyboard.vhd                                            ;         ;
 ; debounce.vhd                                    ; yes             ; User VHDL File                     ; M:/ECE287/game/debounce.vhd                                                ;         ;
+; hex_display.vhd                                 ; yes             ; User VHDL File                     ; M:/ECE287/game/hex_display.vhd                                             ;         ;
 ; lpm_divide.tdf                                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
 ; abs_divider.inc                                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
 ; sign_div_unsign.inc                             ; yes             ; Megafunction                       ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
@@ -221,20 +229,20 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,158     ;
+; Estimated Total logic elements              ; 4,877     ;
 ;                                             ;           ;
-; Total combinational functions               ; 4099      ;
+; Total combinational functions               ; 4820      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 821       ;
-;     -- 3 input functions                    ; 1311      ;
-;     -- <=2 input functions                  ; 1967      ;
+;     -- 4 input functions                    ; 1067      ;
+;     -- 3 input functions                    ; 1792      ;
+;     -- <=2 input functions                  ; 1961      ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1643      ;
-;     -- arithmetic mode                      ; 2456      ;
+;     -- normal mode                          ; 2072      ;
+;     -- arithmetic mode                      ; 2748      ;
 ;                                             ;           ;
-; Total registers                             ; 361       ;
-;     -- Dedicated logic registers            ; 361       ;
+; Total registers                             ; 362       ;
+;     -- Dedicated logic registers            ; 362       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 77        ;
@@ -245,9 +253,9 @@ agreement for further details.
 ;     -- PLLs                                 ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 300       ;
-; Total fan-out                               ; 12360     ;
-; Average fan-out                             ; 2.68      ;
+; Maximum fan-out                             ; 301       ;
+; Total fan-out                               ; 14672     ;
+; Average fan-out                             ; 2.75      ;
 +---------------------------------------------+-----------+
 
 
@@ -256,11 +264,17 @@ agreement for further details.
 +---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 ; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                           ; Entity Name                  ; Library Name ;
 +---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |game                                       ; 4099 (0)            ; 361 (0)                   ; 0           ; 0            ; 0       ; 0         ; 77   ; 0            ; |game                                                                                                                         ; game                         ; work         ;
+; |game                                       ; 4820 (0)            ; 362 (0)                   ; 0           ; 0            ; 0       ; 0         ; 77   ; 0            ; |game                                                                                                                         ; game                         ; work         ;
 ;    |altpll0:inst6|                          ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|altpll0:inst6                                                                                                           ; altpll0                      ; altpll0      ;
 ;       |altpll0_altpll_0:altpll_0|           ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|altpll0:inst6|altpll0_altpll_0:altpll_0                                                                                 ; altpll0_altpll_0             ; altpll0      ;
 ;          |altpll0_altpll_0_altpll_id42:sd1| ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1                                                ; altpll0_altpll_0_altpll_id42 ; altpll0      ;
-;    |hw_image_generator:inst|                ; 3967 (3231)         ; 252 (252)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst                                                                                                 ; hw_image_generator           ; work         ;
+;    |hw_image_generator:inst|                ; 4689 (3681)         ; 253 (253)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst                                                                                                 ; hw_image_generator           ; work         ;
+;       |HEX_DISPLAY:HD0|                     ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD0                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD1|                     ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD1                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD2|                     ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD2                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD4|                     ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD4                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD5|                     ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD5                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD6|                     ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD6                                                                                 ; HEX_DISPLAY                  ; work         ;
 ;       |lpm_divide:Div0|                     ; 82 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Div0                                                                                 ; lpm_divide                   ; work         ;
 ;          |lpm_divide_sim:auto_generated|    ; 82 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Div0|lpm_divide_sim:auto_generated                                                   ; lpm_divide_sim               ; work         ;
 ;             |sign_div_unsign_klh:divider|   ; 82 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Div0|lpm_divide_sim:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh          ; work         ;
@@ -277,26 +291,30 @@ agreement for further details.
 ;          |lpm_divide_vim:auto_generated|    ; 69 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Div3|lpm_divide_vim:auto_generated                                                   ; lpm_divide_vim               ; work         ;
 ;             |sign_div_unsign_nlh:divider|   ; 69 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Div3|lpm_divide_vim:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh          ; work         ;
 ;                |alt_u_div_27f:divider|      ; 69 (69)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Div3|lpm_divide_vim:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_27f:divider ; alt_u_div_27f                ; work         ;
-;       |lpm_divide:Mod0|                     ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod0                                                                                 ; lpm_divide                   ; work         ;
-;          |lpm_divide_ccm:auto_generated|    ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
-;             |sign_div_unsign_1nh:divider|   ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
-;                |alt_u_div_m9f:divider|      ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
-;       |lpm_divide:Mod1|                     ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod1                                                                                 ; lpm_divide                   ; work         ;
-;          |lpm_divide_ccm:auto_generated|    ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
-;             |sign_div_unsign_1nh:divider|   ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
-;                |alt_u_div_m9f:divider|      ; 87 (87)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
-;       |lpm_divide:Mod2|                     ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod2                                                                                 ; lpm_divide                   ; work         ;
-;          |lpm_divide_ccm:auto_generated|    ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
-;             |sign_div_unsign_1nh:divider|   ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
-;                |alt_u_div_m9f:divider|      ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
-;       |lpm_divide:Mod3|                     ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod3                                                                                 ; lpm_divide                   ; work         ;
-;          |lpm_divide_ccm:auto_generated|    ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
-;             |sign_div_unsign_1nh:divider|   ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
-;                |alt_u_div_m9f:divider|      ; 87 (87)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
-;    |ps2_keyboard:inst2|                     ; 63 (21)             ; 58 (34)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|ps2_keyboard:inst2                                                                                                      ; ps2_keyboard                 ; work         ;
+;       |lpm_divide:Mod0|                     ; 146 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod0                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 146 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 146 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 146 (146)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;       |lpm_divide:Mod1|                     ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod1                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;       |lpm_divide:Mod2|                     ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod2                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 87 (87)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;       |lpm_divide:Mod3|                     ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod3                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 130 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 130 (130)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;       |lpm_divide:Mod4|                     ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod4                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 87 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 87 (87)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;    |ps2_keyboard:inst2|                     ; 64 (22)             ; 58 (34)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|ps2_keyboard:inst2                                                                                                      ; ps2_keyboard                 ; work         ;
 ;       |debounce:debounce_ps2_clk|           ; 21 (21)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|ps2_keyboard:inst2|debounce:debounce_ps2_clk                                                                            ; debounce                     ; work         ;
 ;       |debounce:debounce_ps2_data|          ; 21 (21)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|ps2_keyboard:inst2|debounce:debounce_ps2_data                                                                           ; debounce                     ; work         ;
-;    |vga_controller:inst1|                   ; 69 (69)             ; 51 (51)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|vga_controller:inst1                                                                                                    ; vga_controller               ; work         ;
+;    |vga_controller:inst1|                   ; 67 (67)             ; 51 (51)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |game|vga_controller:inst1                                                                                                    ; vga_controller               ; work         ;
 +---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -316,105 +334,105 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+---------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal             ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------------------+------------------------+
-; hw_image_generator:inst|x1[10]                      ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[9]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[8]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[7]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[6]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[5]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[4]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[3]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[2]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[1]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x1[0]                       ; hw_image_generator:inst|Equal4  ; yes                    ;
-; hw_image_generator:inst|x2[10]                      ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[9]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[8]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[7]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[6]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[5]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[4]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[3]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[2]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[1]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x2[0]                       ; hw_image_generator:inst|Equal5  ; yes                    ;
-; hw_image_generator:inst|x3[10]                      ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[9]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[8]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[7]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[6]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[5]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[4]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[3]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[2]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[1]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x3[0]                       ; hw_image_generator:inst|Equal6  ; yes                    ;
-; hw_image_generator:inst|x4[10]                      ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[9]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[8]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[7]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[6]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[5]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[4]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[3]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[2]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[1]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|x4[0]                       ; hw_image_generator:inst|Equal7  ; yes                    ;
-; hw_image_generator:inst|hex0[6]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex0[5]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex0[4]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex0[3]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex0[2]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex0[1]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex0[0]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex1[6]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex1[5]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex1[4]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex1[3]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex1[2]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex1[1]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex1[0]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex2[6]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex2[5]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex2[4]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex2[3]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex2[2]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex2[1]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex2[0]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex4[6]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex4[5]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex4[4]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex4[3]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex4[2]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex4[1]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex4[0]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex5[6]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex5[5]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex5[4]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex5[3]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex5[2]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex5[1]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex5[0]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex6[6]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex6[5]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex6[4]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex6[3]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex6[2]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex6[1]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|hex6[0]                     ; GND                             ; yes                    ;
-; hw_image_generator:inst|c[0]                        ; ps2_keyboard:inst2|ps2_code_new ; yes                    ;
-; hw_image_generator:inst|c[1]                        ; ps2_keyboard:inst2|ps2_code_new ; yes                    ;
-; hw_image_generator:inst|c[2]                        ; ps2_keyboard:inst2|ps2_code_new ; yes                    ;
-; hw_image_generator:inst|c[3]                        ; ps2_keyboard:inst2|ps2_code_new ; yes                    ;
-; hw_image_generator:inst|c[4]                        ; ps2_keyboard:inst2|ps2_code_new ; yes                    ;
-; hw_image_generator:inst|c[5]                        ; ps2_keyboard:inst2|ps2_code_new ; yes                    ;
-; hw_image_generator:inst|c[6]                        ; ps2_keyboard:inst2|ps2_code_new ; yes                    ;
-; hw_image_generator:inst|c[7]                        ; ps2_keyboard:inst2|ps2_code_new ; yes                    ;
-; hw_image_generator:inst|state.STANDBY_8120          ; GND                             ; yes                    ;
-; hw_image_generator:inst|state.HARD_8087             ; GND                             ; yes                    ;
-; hw_image_generator:inst|speedy[4]                   ; GND                             ; yes                    ;
-; hw_image_generator:inst|state.EASY_8109             ; GND                             ; yes                    ;
-; hw_image_generator:inst|speed[2]                    ; GND                             ; yes                    ;
+; hw_image_generator:inst|points[2]                   ; GND                             ; yes                    ;
+; hw_image_generator:inst|points[3]                   ; GND                             ; yes                    ;
+; hw_image_generator:inst|x1[10]                      ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[9]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[8]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[7]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[6]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[5]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[4]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[3]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[2]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[1]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x1[0]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[10]                      ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[9]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[8]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[7]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[6]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[5]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[4]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[3]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[2]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[1]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x2[0]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[10]                      ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[9]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[8]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[7]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[6]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[5]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[4]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[3]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[2]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[1]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x3[0]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[10]                      ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[9]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[8]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[7]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[6]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[5]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[4]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[3]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[2]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[1]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|x4[0]                       ; hw_image_generator:inst|RANDOMX ; yes                    ;
+; hw_image_generator:inst|state.MEDIUM_7453           ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD0|hex[6]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD0|hex[5]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD0|hex[4]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD0|hex[3]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD0|hex[2]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD0|hex[1]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD0|hex[0]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD1|hex[6]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD1|hex[5]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD1|hex[4]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD1|hex[3]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD1|hex[2]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD1|hex[1]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD1|hex[0]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD2|hex[6]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD2|hex[5]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD2|hex[4]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD2|hex[3]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD2|hex[2]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD2|hex[1]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD2|hex[0]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD4|hex[6]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD4|hex[5]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD4|hex[4]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD4|hex[3]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD4|hex[2]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD4|hex[1]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD4|hex[0]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD5|hex[6]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD5|hex[5]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD5|hex[4]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD5|hex[3]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD5|hex[2]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD5|hex[1]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD5|hex[0]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD6|hex[6]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD6|hex[5]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD6|hex[4]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD6|hex[3]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD6|hex[2]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD6|hex[1]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|HEX_DISPLAY:HD6|hex[0]      ; GND                             ; yes                    ;
+; hw_image_generator:inst|speedy[0]                   ; GND                             ; yes                    ;
+; hw_image_generator:inst|state.STANDBY_7475          ; GND                             ; yes                    ;
+; hw_image_generator:inst|c[0]                        ; hw_image_generator:inst|c[0]    ; yes                    ;
+; hw_image_generator:inst|c[1]                        ; hw_image_generator:inst|c[0]    ; yes                    ;
+; hw_image_generator:inst|c[2]                        ; hw_image_generator:inst|c[0]    ; yes                    ;
+; hw_image_generator:inst|c[3]                        ; hw_image_generator:inst|c[0]    ; yes                    ;
+; hw_image_generator:inst|c[4]                        ; hw_image_generator:inst|c[0]    ; yes                    ;
+; hw_image_generator:inst|c[5]                        ; hw_image_generator:inst|c[0]    ; yes                    ;
+; hw_image_generator:inst|c[6]                        ; hw_image_generator:inst|c[0]    ; yes                    ;
+; hw_image_generator:inst|c[7]                        ; hw_image_generator:inst|c[0]    ; yes                    ;
 ; Number of user-specified and inferred latches = 99  ;                                 ;                        ;
 +-----------------------------------------------------+---------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -442,12 +460,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 361   ;
-; Number of registers using Synchronous Clear  ; 213   ;
+; Total registers                              ; 362   ;
+; Number of registers using Synchronous Clear  ; 158   ;
 ; Number of registers using Synchronous Load   ; 17    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 291   ;
+; Number of registers using Clock Enable       ; 257   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -457,33 +475,33 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; vga_controller:inst1|row[31]            ; 13      ;
-; vga_controller:inst1|column[31]         ; 7       ;
-; vga_controller:inst1|column[0]          ; 10      ;
-; vga_controller:inst1|row[0]             ; 11      ;
-; hw_image_generator:inst|x[9]            ; 14      ;
-; hw_image_generator:inst|x[6]            ; 14      ;
-; hw_image_generator:inst|x[4]            ; 14      ;
-; hw_image_generator:inst|x[3]            ; 14      ;
-; hw_image_generator:inst|y[7]            ; 21      ;
-; hw_image_generator:inst|y[6]            ; 21      ;
-; hw_image_generator:inst|y[3]            ; 21      ;
+; vga_controller:inst1|row[31]            ; 19      ;
+; vga_controller:inst1|column[31]         ; 8       ;
+; vga_controller:inst1|column[0]          ; 12      ;
+; vga_controller:inst1|row[0]             ; 13      ;
+; hw_image_generator:inst|x[9]            ; 18      ;
+; hw_image_generator:inst|x[6]            ; 15      ;
+; hw_image_generator:inst|x[4]            ; 16      ;
+; hw_image_generator:inst|x[3]            ; 16      ;
+; hw_image_generator:inst|y[7]            ; 27      ;
+; hw_image_generator:inst|y[6]            ; 27      ;
+; hw_image_generator:inst|y[3]            ; 27      ;
 ; hw_image_generator:inst|y1[8]           ; 10      ;
-; hw_image_generator:inst|y1[5]           ; 10      ;
+; hw_image_generator:inst|y1[5]           ; 11      ;
 ; hw_image_generator:inst|y1[3]           ; 11      ;
-; hw_image_generator:inst|y1[2]           ; 12      ;
-; hw_image_generator:inst|y2[9]           ; 10      ;
-; hw_image_generator:inst|y2[6]           ; 10      ;
-; hw_image_generator:inst|y2[4]           ; 10      ;
-; hw_image_generator:inst|y2[3]           ; 11      ;
-; hw_image_generator:inst|y3[9]           ; 10      ;
-; hw_image_generator:inst|y3[8]           ; 10      ;
-; hw_image_generator:inst|y3[7]           ; 10      ;
-; hw_image_generator:inst|y3[2]           ; 12      ;
-; hw_image_generator:inst|y4[10]          ; 10      ;
-; hw_image_generator:inst|y4[7]           ; 10      ;
-; hw_image_generator:inst|y4[5]           ; 10      ;
-; hw_image_generator:inst|y4[4]           ; 10      ;
+; hw_image_generator:inst|y1[2]           ; 13      ;
+; hw_image_generator:inst|y2[9]           ; 11      ;
+; hw_image_generator:inst|y2[6]           ; 12      ;
+; hw_image_generator:inst|y2[4]           ; 12      ;
+; hw_image_generator:inst|y2[3]           ; 12      ;
+; hw_image_generator:inst|y3[9]           ; 11      ;
+; hw_image_generator:inst|y3[8]           ; 11      ;
+; hw_image_generator:inst|y3[7]           ; 11      ;
+; hw_image_generator:inst|y3[2]           ; 13      ;
+; hw_image_generator:inst|y4[10]          ; 11      ;
+; hw_image_generator:inst|y4[7]           ; 11      ;
+; hw_image_generator:inst|y4[5]           ; 12      ;
+; hw_image_generator:inst|y4[4]           ; 12      ;
 ; Total number of inverted registers = 27 ;         ;
 +-----------------------------------------+---------+
 
@@ -493,30 +511,42 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |game|ps2_keyboard:inst2|count_idle[10]                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |game|ps2_keyboard:inst2|debounce:debounce_ps2_clk|counter_out[1]  ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |game|hw_image_generator:inst|bestscore[4]                         ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |game|ps2_keyboard:inst2|count_idle[0]                             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |game|ps2_keyboard:inst2|debounce:debounce_ps2_clk|counter_out[6]  ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |game|ps2_keyboard:inst2|debounce:debounce_ps2_data|counter_out[0] ;
-; 4:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y1[29]                               ;
-; 4:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y2[10]                               ;
-; 4:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y3[15]                               ;
-; 4:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y4[17]                               ;
-; 6:1                ; 10 bits   ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |game|hw_image_generator:inst|score[9]                             ;
-; 7:1                ; 27 bits   ; 108 LEs       ; 81 LEs               ; 27 LEs                 ; Yes        ; |game|hw_image_generator:inst|x[15]                                ;
-; 15:1               ; 29 bits   ; 290 LEs       ; 174 LEs              ; 116 LEs                ; Yes        ; |game|hw_image_generator:inst|y[26]                                ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y1[5]                                ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y2[4]                                ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y3[7]                                ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y4[10]                               ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |game|hw_image_generator:inst|x[9]                                 ;
-; 15:1               ; 3 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; Yes        ; |game|hw_image_generator:inst|y[3]                                 ;
+; 3:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y1[21]                               ;
+; 3:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y2[26]                               ;
+; 3:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y3[20]                               ;
+; 3:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y4[2]                                ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |game|hw_image_generator:inst|bar[0]                               ;
+; 6:1                ; 10 bits   ; 40 LEs        ; 30 LEs               ; 10 LEs                 ; Yes        ; |game|hw_image_generator:inst|score[6]                             ;
+; 6:1                ; 27 bits   ; 108 LEs       ; 81 LEs               ; 27 LEs                 ; Yes        ; |game|hw_image_generator:inst|x[27]                                ;
+; 8:1                ; 29 bits   ; 145 LEs       ; 29 LEs               ; 116 LEs                ; Yes        ; |game|hw_image_generator:inst|y[20]                                ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y1[8]                                ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y2[4]                                ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y3[7]                                ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |game|hw_image_generator:inst|y4[10]                               ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |game|hw_image_generator:inst|x[3]                                 ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 3 LEs                ; 12 LEs                 ; Yes        ; |game|hw_image_generator:inst|y[3]                                 ;
 ; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |game|vga_controller:inst1|v_count                                 ;
+; 3:1                ; 41 bits   ; 82 LEs        ; 41 LEs               ; 41 LEs                 ; No         ; |game|hw_image_generator:inst|ry[9]                                ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 9 LEs                ; 6 LEs                  ; No         ; |game|hw_image_generator:inst|ry[0]                                ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |game|hw_image_generator:inst|state.EASY                           ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|hex0[6]                              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|hex1[6]                              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|hex2[6]                              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|hex4[6]                              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|hex5[6]                              ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|hex6[0]                              ;
+; 4:1                ; 40 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |game|hw_image_generator:inst|Add13                                ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |game|hw_image_generator:inst|Add33                                ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |game|hw_image_generator:inst|Add33                                ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|HEX_DISPLAY:HD0|hex[0]               ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|HEX_DISPLAY:HD1|hex[5]               ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|HEX_DISPLAY:HD2|hex[0]               ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|HEX_DISPLAY:HD4|hex[0]               ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|HEX_DISPLAY:HD5|hex[0]               ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |game|hw_image_generator:inst|HEX_DISPLAY:HD6|hex[5]               ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |game|hw_image_generator:inst|Add33                                ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |game|hw_image_generator:inst|red[4]                               ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |game|hw_image_generator:inst|green[2]                             ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |game|hw_image_generator:inst|Add33                                ;
+; 9:1                ; 28 bits   ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |game|hw_image_generator:inst|Add33                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
 
 
@@ -612,6 +642,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod1 ;
++------------------------+----------------+------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                           ;
++------------------------+----------------+------------------------------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                                        ;
+; LPM_WIDTHD             ; 10             ; Untyped                                        ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                        ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                        ;
+; LPM_PIPELINE           ; 0              ; Untyped                                        ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                        ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                        ;
+; CBXI_PARAMETER         ; lpm_divide_ccm ; Untyped                                        ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                        ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                 ;
++------------------------+----------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Div0 ;
 +------------------------+----------------+------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                           ;
@@ -635,7 +688,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod1 ;
+; Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod2 ;
 +------------------------+----------------+------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                           ;
 +------------------------+----------------+------------------------------------------------+
@@ -681,7 +734,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod2 ;
+; Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod3 ;
 +------------------------+----------------+------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                           ;
 +------------------------+----------------+------------------------------------------------+
@@ -727,7 +780,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod3 ;
+; Parameter Settings for Inferred Entity Instance: hw_image_generator:inst|lpm_divide:Mod4 ;
 +------------------------+----------------+------------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                           ;
 +------------------------+----------------+------------------------------------------------+
@@ -772,6 +825,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD6" ;
++------------+-------+----------+-------------------------------------+
+; Port       ; Type  ; Severity ; Details                             ;
++------------+-------+----------+-------------------------------------+
+; num[31..4] ; Input ; Info     ; Stuck at GND                        ;
++------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD5" ;
++------------+-------+----------+-------------------------------------+
+; Port       ; Type  ; Severity ; Details                             ;
++------------+-------+----------+-------------------------------------+
+; num[31..4] ; Input ; Info     ; Stuck at GND                        ;
++------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD4" ;
++------------+-------+----------+-------------------------------------+
+; Port       ; Type  ; Severity ; Details                             ;
++------------+-------+----------+-------------------------------------+
+; num[31..4] ; Input ; Info     ; Stuck at GND                        ;
++------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD2" ;
++------------+-------+----------+-------------------------------------+
+; Port       ; Type  ; Severity ; Details                             ;
++------------+-------+----------+-------------------------------------+
+; num[31..4] ; Input ; Info     ; Stuck at GND                        ;
++------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD1" ;
++------------+-------+----------+-------------------------------------+
+; Port       ; Type  ; Severity ; Details                             ;
++------------+-------+----------+-------------------------------------+
+; num[31..4] ; Input ; Info     ; Stuck at GND                        ;
++------------+-------+----------+-------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "hw_image_generator:inst|HEX_DISPLAY:HD0" ;
++------------+-------+----------+-------------------------------------+
+; Port       ; Type  ; Severity ; Details                             ;
++------------+-------+----------+-------------------------------------+
+; num[31..4] ; Input ; Info     ; Stuck at GND                        ;
++------------+-------+----------+-------------------------------------+
+
+
 +---------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1"                ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -813,28 +920,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 77                          ;
-; cycloneiii_ff         ; 361                         ;
-;     ENA               ; 66                          ;
-;     ENA SCLR          ; 212                         ;
-;     ENA SLD           ; 13                          ;
-;     SCLR              ; 1                           ;
-;     SLD               ; 4                           ;
-;     plain             ; 65                          ;
-; cycloneiii_lcell_comb ; 4101                        ;
-;     arith             ; 2456                        ;
+; cycloneiii_ff         ; 362                         ;
+;     ENA               ; 102                         ;
+;     ENA SCLR          ; 138                         ;
+;     ENA SLD           ; 17                          ;
+;     SCLR              ; 20                          ;
+;     plain             ; 85                          ;
+; cycloneiii_lcell_comb ; 4822                        ;
+;     arith             ; 2748                        ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 1459                        ;
-;         3 data inputs ; 987                         ;
-;     normal            ; 1645                        ;
-;         0 data inputs ; 55                          ;
-;         1 data inputs ; 63                          ;
-;         2 data inputs ; 382                         ;
-;         3 data inputs ; 324                         ;
-;         4 data inputs ; 821                         ;
+;         2 data inputs ; 1341                        ;
+;         3 data inputs ; 1397                        ;
+;     normal            ; 2074                        ;
+;         0 data inputs ; 65                          ;
+;         1 data inputs ; 59                          ;
+;         2 data inputs ; 488                         ;
+;         3 data inputs ; 395                         ;
+;         4 data inputs ; 1067                        ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 20.90                       ;
-; Average LUT depth     ; 10.48                       ;
+; Max LUT depth         ; 26.60                       ;
+; Average LUT depth     ; 13.27                       ;
 +-----------------------+-----------------------------+
 
 
@@ -843,7 +949,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -853,7 +959,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Nov 24 17:02:11 2019
+    Info: Processing started: Thu Dec 05 16:57:53 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off game -c game
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -878,6 +984,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file ps2_key
 Info (12021): Found 2 design units, including 1 entities, in source file debounce.vhd
     Info (12022): Found design unit 1: debounce-logic File: M:/ECE287/game/debounce.vhd Line: 36
     Info (12023): Found entity 1: debounce File: M:/ECE287/game/debounce.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file hex_display.vhd
+    Info (12022): Found design unit 1: HEX_DISPLAY-BEHAVE File: M:/ECE287/game/hex_display.vhd Line: 11
+    Info (12023): Found entity 1: HEX_DISPLAY File: M:/ECE287/game/hex_display.vhd Line: 6
 Info (12127): Elaborating entity "game" for the top level hierarchy
 Info (12128): Elaborating entity "altpll0" for hierarchy "altpll0:inst6"
 Info (12128): Elaborating entity "altpll0_altpll_0" for hierarchy "altpll0:inst6|altpll0_altpll_0:altpll_0" File: M:/ECE287/game/altpll0/synthesis/altpll0.v Line: 33
@@ -886,244 +995,238 @@ Info (12128): Elaborating entity "altpll0_altpll_0_dffpipe_l2c" for hierarchy "a
 Info (12128): Elaborating entity "altpll0_altpll_0_altpll_id42" for hierarchy "altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1" File: M:/ECE287/game/altpll0/synthesis/submodules/altpll0_altpll_0.v Line: 283
 Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:inst1"
 Info (12128): Elaborating entity "hw_image_generator" for hierarchy "hw_image_generator:inst"
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(100): signal "gameover" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 100
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(109): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 109
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(109): signal "sbutton" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 109
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(94): inferring latch(es) for signal or variable "c", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(94): inferring latch(es) for signal or variable "state", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(145): signal "x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 145
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(145): signal "y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 145
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(151): signal "x1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 151
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(151): signal "y1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 151
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(152): signal "red1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 152
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(154): signal "blue1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 154
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(157): signal "x2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 157
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(157): signal "y2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 157
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(158): signal "red2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 158
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(160): signal "blue2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 160
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(163): signal "x3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 163
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(163): signal "y3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 163
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(164): signal "red3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 164
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(166): signal "blue3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 166
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(169): signal "x4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 169
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(169): signal "y4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 169
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(170): signal "red4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 170
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(172): signal "blue4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 172
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(376): signal "gameover" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 376
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(377): signal "y1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 377
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(378): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 378
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(381): signal "y2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 381
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(382): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 382
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(385): signal "y3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 385
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(386): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 386
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(389): signal "y4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 389
-Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(390): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 390
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(374): inferring latch(es) for signal or variable "x1", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(374): inferring latch(es) for signal or variable "x2", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(374): inferring latch(es) for signal or variable "x3", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(374): inferring latch(es) for signal or variable "x4", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(410): inferring latch(es) for signal or variable "hex0", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(410): inferring latch(es) for signal or variable "hex1", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(410): inferring latch(es) for signal or variable "hex2", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(410): inferring latch(es) for signal or variable "hex4", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(410): inferring latch(es) for signal or variable "hex5", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(410): inferring latch(es) for signal or variable "hex6", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex6[0]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex6[1]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex6[2]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex6[3]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex6[4]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex6[5]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex6[6]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex5[0]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex5[1]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex5[2]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex5[3]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex5[4]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex5[5]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex5[6]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex4[0]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex4[1]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex4[2]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex4[3]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex4[4]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex4[5]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex4[6]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex2[0]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex2[1]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex2[2]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex2[3]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex2[4]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex2[5]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex2[6]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex1[0]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex1[1]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex1[2]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex1[3]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex1[4]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex1[5]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex1[6]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex0[0]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex0[1]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex0[2]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex0[3]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex0[4]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex0[5]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "hex0[6]" at hw_image_generator.vhd(410) File: M:/ECE287/game/hw_image_generator.vhd Line: 410
-Info (10041): Inferred latch for "x4[0]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[1]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[2]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[3]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[4]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[5]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[6]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[7]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[8]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[9]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[10]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[11]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[12]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[13]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[14]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[15]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[16]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[17]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[18]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[19]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[20]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[21]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[22]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[23]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[24]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[25]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[26]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[27]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[28]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[29]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[30]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x4[31]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[0]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[1]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[2]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[3]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[4]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[5]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[6]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[7]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[8]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[9]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[10]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[11]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[12]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[13]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[14]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[15]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[16]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[17]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[18]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[19]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[20]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[21]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[22]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[23]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[24]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[25]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[26]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[27]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[28]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[29]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[30]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x3[31]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[0]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[1]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[2]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[3]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[4]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[5]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[6]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[7]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[8]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[9]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[10]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[11]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[12]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[13]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[14]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[15]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[16]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[17]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[18]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[19]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[20]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[21]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[22]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[23]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[24]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[25]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[26]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[27]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[28]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[29]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[30]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x2[31]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[0]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[1]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[2]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[3]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[4]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[5]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[6]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[7]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[8]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[9]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[10]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[11]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[12]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[13]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[14]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[15]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[16]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[17]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[18]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[19]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[20]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[21]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[22]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[23]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[24]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[25]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[26]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[27]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[28]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[29]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[30]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "x1[31]" at hw_image_generator.vhd(374) File: M:/ECE287/game/hw_image_generator.vhd Line: 374
-Info (10041): Inferred latch for "state.SUPERHARD" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "state.HARD" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "state.MEDIUM" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "state.EASY" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "state.STANDBY" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "c[0]" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "c[1]" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "c[2]" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "c[3]" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "c[4]" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "c[5]" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "c[6]" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
-Info (10041): Inferred latch for "c[7]" at hw_image_generator.vhd(94) File: M:/ECE287/game/hw_image_generator.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(96): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 96
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(97): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 97
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(104): signal "gameover" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(113): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 113
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(113): signal "sbutton" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 113
+Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(93): inferring latch(es) for signal or variable "c", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(93): inferring latch(es) for signal or variable "state", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(123): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 123
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(127): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 127
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(131): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 131
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(146): signal "x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 146
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(146): signal "y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 146
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(152): signal "x1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 152
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(152): signal "y1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 152
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(153): signal "red1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 153
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(155): signal "blue1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 155
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(158): signal "x2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 158
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(158): signal "y2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 158
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(159): signal "red2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 159
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(161): signal "blue2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 161
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(164): signal "x3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 164
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(164): signal "y3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 164
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(165): signal "red3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 165
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(167): signal "blue3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 167
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(170): signal "x4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 170
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(170): signal "y4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 170
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(171): signal "red4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 171
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(173): signal "blue4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 173
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(176): signal "rx" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 176
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(176): signal "ry" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 176
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(177): signal "bar" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 177
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(177): signal "y1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 177
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(177): signal "y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 177
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(177): signal "y2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 177
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(177): signal "y3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 177
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(177): signal "y4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 177
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(178): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 178
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(182): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 182
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(186): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 186
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(243): signal "x1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 243
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(244): signal "y1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 244
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(246): signal "x2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 246
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(247): signal "y2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 247
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(249): signal "x3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 249
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(250): signal "y3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 250
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(252): signal "x4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 252
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(253): signal "y4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 253
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(438): signal "gameover" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 438
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(439): signal "y1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 439
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(440): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 440
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(442): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 442
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(445): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 445
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(449): signal "y2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 449
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(450): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 450
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(452): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 452
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(455): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 455
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(459): signal "y3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 459
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(460): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 460
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(462): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 462
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(465): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 465
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(469): signal "y4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 469
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(470): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 470
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(472): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 472
+Warning (10492): VHDL Process Statement warning at hw_image_generator.vhd(475): signal "rand" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: M:/ECE287/game/hw_image_generator.vhd Line: 475
+Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(436): inferring latch(es) for signal or variable "x1", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(436): inferring latch(es) for signal or variable "x2", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(436): inferring latch(es) for signal or variable "x3", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Warning (10631): VHDL Process Statement warning at hw_image_generator.vhd(436): inferring latch(es) for signal or variable "x4", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[0]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[1]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[2]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[3]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[4]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[5]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[6]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[7]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[8]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[9]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[10]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[11]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[12]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[13]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[14]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[15]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[16]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[17]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[18]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[19]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[20]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[21]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[22]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[23]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[24]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[25]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[26]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[27]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[28]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[29]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[30]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x4[31]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[0]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[1]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[2]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[3]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[4]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[5]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[6]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[7]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[8]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[9]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[10]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[11]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[12]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[13]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[14]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[15]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[16]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[17]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[18]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[19]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[20]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[21]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[22]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[23]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[24]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[25]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[26]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[27]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[28]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[29]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[30]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x3[31]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[0]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[1]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[2]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[3]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[4]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[5]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[6]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[7]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[8]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[9]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[10]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[11]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[12]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[13]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[14]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[15]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[16]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[17]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[18]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[19]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[20]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[21]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[22]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[23]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[24]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[25]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[26]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[27]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[28]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[29]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[30]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x2[31]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[0]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[1]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[2]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[3]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[4]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[5]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[6]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[7]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[8]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[9]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[10]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[11]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[12]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[13]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[14]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[15]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[16]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[17]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[18]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[19]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[20]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[21]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[22]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[23]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[24]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[25]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[26]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[27]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[28]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[29]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[30]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "x1[31]" at hw_image_generator.vhd(436) File: M:/ECE287/game/hw_image_generator.vhd Line: 436
+Info (10041): Inferred latch for "state.SUPERHARD" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "state.HARD" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "state.MEDIUM" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "state.EASY" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "state.STANDBY" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "c[0]" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "c[1]" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "c[2]" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "c[3]" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "c[4]" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "c[5]" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "c[6]" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (10041): Inferred latch for "c[7]" at hw_image_generator.vhd(93) File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+Info (12128): Elaborating entity "HEX_DISPLAY" for hierarchy "hw_image_generator:inst|HEX_DISPLAY:HD0" File: M:/ECE287/game/hw_image_generator.vhd Line: 497
+Warning (10631): VHDL Process Statement warning at hex_display.vhd(23): inferring latch(es) for signal or variable "hex", which holds its previous value in one or more paths through the process File: M:/ECE287/game/hex_display.vhd Line: 23
+Info (10041): Inferred latch for "hex[0]" at hex_display.vhd(23) File: M:/ECE287/game/hex_display.vhd Line: 23
+Info (10041): Inferred latch for "hex[1]" at hex_display.vhd(23) File: M:/ECE287/game/hex_display.vhd Line: 23
+Info (10041): Inferred latch for "hex[2]" at hex_display.vhd(23) File: M:/ECE287/game/hex_display.vhd Line: 23
+Info (10041): Inferred latch for "hex[3]" at hex_display.vhd(23) File: M:/ECE287/game/hex_display.vhd Line: 23
+Info (10041): Inferred latch for "hex[4]" at hex_display.vhd(23) File: M:/ECE287/game/hex_display.vhd Line: 23
+Info (10041): Inferred latch for "hex[5]" at hex_display.vhd(23) File: M:/ECE287/game/hex_display.vhd Line: 23
+Info (10041): Inferred latch for "hex[6]" at hex_display.vhd(23) File: M:/ECE287/game/hex_display.vhd Line: 23
 Info (12128): Elaborating entity "ps2_keyboard" for hierarchy "ps2_keyboard:inst2"
 Info (12128): Elaborating entity "debounce" for hierarchy "ps2_keyboard:inst2|debounce:debounce_ps2_clk" File: M:/ECE287/game/ps2_keyboard.vhd Line: 67
-Info (278001): Inferred 8 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod0" File: M:/ECE287/game/hw_image_generator.vhd Line: 402
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Div0" File: M:/ECE287/game/hw_image_generator.vhd Line: 403
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod1" File: M:/ECE287/game/hw_image_generator.vhd Line: 403
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Div1" File: M:/ECE287/game/hw_image_generator.vhd Line: 404
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod2" File: M:/ECE287/game/hw_image_generator.vhd Line: 405
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Div2" File: M:/ECE287/game/hw_image_generator.vhd Line: 406
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod3" File: M:/ECE287/game/hw_image_generator.vhd Line: 406
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Div3" File: M:/ECE287/game/hw_image_generator.vhd Line: 407
-Info (12130): Elaborated megafunction instantiation "hw_image_generator:inst|lpm_divide:Mod0" File: M:/ECE287/game/hw_image_generator.vhd Line: 402
-Info (12133): Instantiated megafunction "hw_image_generator:inst|lpm_divide:Mod0" with the following parameter: File: M:/ECE287/game/hw_image_generator.vhd Line: 402
+Info (278001): Inferred 9 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod0" File: M:/ECE287/game/hw_image_generator.vhd Line: 404
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod1" File: M:/ECE287/game/hw_image_generator.vhd Line: 489
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Div0" File: M:/ECE287/game/hw_image_generator.vhd Line: 490
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod2" File: M:/ECE287/game/hw_image_generator.vhd Line: 490
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Div1" File: M:/ECE287/game/hw_image_generator.vhd Line: 491
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod3" File: M:/ECE287/game/hw_image_generator.vhd Line: 492
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Div2" File: M:/ECE287/game/hw_image_generator.vhd Line: 493
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Mod4" File: M:/ECE287/game/hw_image_generator.vhd Line: 493
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "hw_image_generator:inst|Div3" File: M:/ECE287/game/hw_image_generator.vhd Line: 494
+Info (12130): Elaborated megafunction instantiation "hw_image_generator:inst|lpm_divide:Mod0" File: M:/ECE287/game/hw_image_generator.vhd Line: 404
+Info (12133): Instantiated megafunction "hw_image_generator:inst|lpm_divide:Mod0" with the following parameter: File: M:/ECE287/game/hw_image_generator.vhd Line: 404
     Info (12134): Parameter "LPM_WIDTHN" = "10"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -1138,8 +1241,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_7pc File: M:/ECE287/game/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
     Info (12023): Found entity 1: add_sub_8pc File: M:/ECE287/game/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "hw_image_generator:inst|lpm_divide:Div0" File: M:/ECE287/game/hw_image_generator.vhd Line: 403
-Info (12133): Instantiated megafunction "hw_image_generator:inst|lpm_divide:Div0" with the following parameter: File: M:/ECE287/game/hw_image_generator.vhd Line: 403
+Info (12130): Elaborated megafunction instantiation "hw_image_generator:inst|lpm_divide:Mod1" File: M:/ECE287/game/hw_image_generator.vhd Line: 489
+Info (12133): Instantiated megafunction "hw_image_generator:inst|lpm_divide:Mod1" with the following parameter: File: M:/ECE287/game/hw_image_generator.vhd Line: 489
+    Info (12134): Parameter "LPM_WIDTHN" = "10"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "hw_image_generator:inst|lpm_divide:Div0" File: M:/ECE287/game/hw_image_generator.vhd Line: 490
+Info (12133): Instantiated megafunction "hw_image_generator:inst|lpm_divide:Div0" with the following parameter: File: M:/ECE287/game/hw_image_generator.vhd Line: 490
     Info (12134): Parameter "LPM_WIDTHN" = "10"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -1150,8 +1259,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_klh File: M:/ECE287/game/db/sign_div_unsign_klh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_s6f.tdf
     Info (12023): Found entity 1: alt_u_div_s6f File: M:/ECE287/game/db/alt_u_div_s6f.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "hw_image_generator:inst|lpm_divide:Div1" File: M:/ECE287/game/hw_image_generator.vhd Line: 404
-Info (12133): Instantiated megafunction "hw_image_generator:inst|lpm_divide:Div1" with the following parameter: File: M:/ECE287/game/hw_image_generator.vhd Line: 404
+Info (12130): Elaborated megafunction instantiation "hw_image_generator:inst|lpm_divide:Div1" File: M:/ECE287/game/hw_image_generator.vhd Line: 491
+Info (12133): Instantiated megafunction "hw_image_generator:inst|lpm_divide:Div1" with the following parameter: File: M:/ECE287/game/hw_image_generator.vhd Line: 491
     Info (12134): Parameter "LPM_WIDTHN" = "10"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -1162,30 +1271,46 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_nlh File: M:/ECE287/game/db/sign_div_unsign_nlh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_27f.tdf
     Info (12023): Found entity 1: alt_u_div_27f File: M:/ECE287/game/db/alt_u_div_27f.tdf Line: 27
+Warning (13012): Latch hw_image_generator:inst|c[0] has unsafe behavior File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ps2_keyboard:inst2|ps2_code[0] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
+Warning (13012): Latch hw_image_generator:inst|c[1] has unsafe behavior File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ps2_keyboard:inst2|ps2_code[1] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
+Warning (13012): Latch hw_image_generator:inst|c[2] has unsafe behavior File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ps2_keyboard:inst2|ps2_code[2] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
+Warning (13012): Latch hw_image_generator:inst|c[3] has unsafe behavior File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ps2_keyboard:inst2|ps2_code[3] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
+Warning (13012): Latch hw_image_generator:inst|c[4] has unsafe behavior File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ps2_keyboard:inst2|ps2_code[4] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
+Warning (13012): Latch hw_image_generator:inst|c[5] has unsafe behavior File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ps2_keyboard:inst2|ps2_code[5] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
+Warning (13012): Latch hw_image_generator:inst|c[6] has unsafe behavior File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ps2_keyboard:inst2|ps2_code[6] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
+Warning (13012): Latch hw_image_generator:inst|c[7] has unsafe behavior File: M:/ECE287/game/hw_image_generator.vhd Line: 93
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ps2_keyboard:inst2|ps2_code[7] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "n_blank" is stuck at VCC
     Warning (13410): Pin "n_sync" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_9_result_int[0]~0" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 72
-    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_6_result_int[0]~14" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 57
-    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_7_result_int[0]~16" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 62
-    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_8_result_int[0]~18" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 67
-    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_9_result_int[0]~0" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 72
-    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_6_result_int[0]~14" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 57
-    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_7_result_int[0]~16" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 62
-    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_8_result_int[0]~18" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 67
+    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_9_result_int[0]~0" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 72
+    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_6_result_int[0]~14" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 57
+    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_7_result_int[0]~16" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 62
+    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_8_result_int[0]~18" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 67
+    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_9_result_int[0]~0" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 72
+    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_6_result_int[0]~14" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 57
+    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_7_result_int[0]~16" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 62
+    Info (17048): Logic cell "hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider|add_sub_8_result_int[0]~18" File: M:/ECE287/game/db/alt_u_div_m9f.tdf Line: 67
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4260 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4979 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 71 output pins
-    Info (21061): Implemented 4182 logic cells
+    Info (21061): Implemented 4901 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Sun Nov 24 17:02:29 2019
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Thu Dec 05 16:58:13 2019
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:28
 
 

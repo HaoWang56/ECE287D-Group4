@@ -1,5 +1,5 @@
 Fitter report for game
-Sun Nov 24 17:02:57 2019
+Thu Dec 05 16:58:44 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -70,17 +70,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Nov 24 17:02:57 2019       ;
+; Fitter Status                      ; Successful - Thu Dec 05 16:58:44 2019       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; game                                        ;
 ; Top-level Entity Name              ; game                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 4,152 / 114,480 ( 4 % )                     ;
-;     Total combinational functions  ; 4,102 / 114,480 ( 4 % )                     ;
-;     Dedicated logic registers      ; 361 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 361                                         ;
+; Total logic elements               ; 4,860 / 114,480 ( 4 % )                     ;
+;     Total combinational functions  ; 4,823 / 114,480 ( 4 % )                     ;
+;     Dedicated logic registers      ; 362 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 362                                         ;
 ; Total pins                         ; 77 / 529 ( 15 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
@@ -157,14 +157,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.7%      ;
-;     Processor 3            ;   1.8%      ;
-;     Processor 4            ;   1.7%      ;
+;     Processor 2            ;   3.1%      ;
+;     Processor 3            ;   1.9%      ;
+;     Processor 4            ;   1.8%      ;
 +----------------------------+-------------+
 
 
@@ -174,8 +174,8 @@ agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 4634 ) ; 0.00 % ( 0 / 4634 )        ; 0.00 % ( 0 / 4634 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 4634 ) ; 0.00 % ( 0 / 4634 )        ; 0.00 % ( 0 / 4634 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 5356 ) ; 0.00 % ( 0 / 5356 )        ; 0.00 % ( 0 / 5356 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 5356 ) ; 0.00 % ( 0 / 5356 )        ; 0.00 % ( 0 / 5356 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -198,7 +198,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 4622 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 5344 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 12 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -214,26 +214,26 @@ The pin-out file can be found in M:/ECE287/game/output_files/game.pin.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 4,152 / 114,480 ( 4 % ) ;
-;     -- Combinational with no register       ; 3791                    ;
-;     -- Register only                        ; 50                      ;
-;     -- Combinational with a register        ; 311                     ;
+; Total logic elements                        ; 4,860 / 114,480 ( 4 % ) ;
+;     -- Combinational with no register       ; 4498                    ;
+;     -- Register only                        ; 37                      ;
+;     -- Combinational with a register        ; 325                     ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 821                     ;
-;     -- 3 input functions                    ; 1311                    ;
-;     -- <=2 input functions                  ; 1970                    ;
-;     -- Register only                        ; 50                      ;
+;     -- 4 input functions                    ; 1067                    ;
+;     -- 3 input functions                    ; 1792                    ;
+;     -- <=2 input functions                  ; 1964                    ;
+;     -- Register only                        ; 37                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 1646                    ;
-;     -- arithmetic mode                      ; 2456                    ;
+;     -- normal mode                          ; 2075                    ;
+;     -- arithmetic mode                      ; 2748                    ;
 ;                                             ;                         ;
-; Total registers*                            ; 361 / 117,053 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 361 / 114,480 ( < 1 % ) ;
+; Total registers*                            ; 362 / 117,053 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 362 / 114,480 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 320 / 7,155 ( 4 % )     ;
+; Total LABs:  partially or completely used   ; 368 / 7,155 ( 5 % )     ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 77 / 529 ( 15 % )       ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )          ;
@@ -251,12 +251,12 @@ The pin-out file can be found in M:/ECE287/game/output_files/game.pin.
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
-; Average interconnect usage (total/H/V)      ; 1.4% / 1.4% / 1.5%      ;
-; Peak interconnect usage (total/H/V)         ; 31.7% / 28.4% / 36.5%   ;
-; Maximum fan-out                             ; 291                     ;
-; Highest non-global fan-out                  ; 291                     ;
-; Total fan-out                               ; 12424                   ;
-; Average fan-out                             ; 2.65                    ;
+; Average interconnect usage (total/H/V)      ; 1.7% / 1.7% / 1.8%      ;
+; Peak interconnect usage (total/H/V)         ; 21.2% / 20.2% / 22.7%   ;
+; Maximum fan-out                             ; 219                     ;
+; Highest non-global fan-out                  ; 219                     ;
+; Total fan-out                               ; 14720                   ;
+; Average fan-out                             ; 2.73                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -269,26 +269,26 @@ The pin-out file can be found in M:/ECE287/game/output_files/game.pin.
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 4152 / 114480 ( 4 % )  ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 3791                   ; 0                              ;
-;     -- Register only                        ; 50                     ; 0                              ;
-;     -- Combinational with a register        ; 311                    ; 0                              ;
+; Total logic elements                        ; 4860 / 114480 ( 4 % )  ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 4498                   ; 0                              ;
+;     -- Register only                        ; 37                     ; 0                              ;
+;     -- Combinational with a register        ; 325                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 821                    ; 0                              ;
-;     -- 3 input functions                    ; 1311                   ; 0                              ;
-;     -- <=2 input functions                  ; 1970                   ; 0                              ;
-;     -- Register only                        ; 50                     ; 0                              ;
+;     -- 4 input functions                    ; 1067                   ; 0                              ;
+;     -- 3 input functions                    ; 1792                   ; 0                              ;
+;     -- <=2 input functions                  ; 1964                   ; 0                              ;
+;     -- Register only                        ; 37                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 1646                   ; 0                              ;
-;     -- arithmetic mode                      ; 2456                   ; 0                              ;
+;     -- normal mode                          ; 2075                   ; 0                              ;
+;     -- arithmetic mode                      ; 2748                   ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total registers                             ; 361                    ; 0                              ;
-;     -- Dedicated logic registers            ; 361 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 362                    ; 0                              ;
+;     -- Dedicated logic registers            ; 362 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 320 / 7155 ( 4 % )     ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 368 / 7155 ( 5 % )     ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 77                     ; 0                              ;
@@ -305,8 +305,8 @@ The pin-out file can be found in M:/ECE287/game/output_files/game.pin.
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 12417                  ; 60                             ;
-;     -- Registered Connections               ; 3501                   ; 0                              ;
+;     -- Total Connections                    ; 14713                  ; 60                             ;
+;     -- Registered Connections               ; 3867                   ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 0                      ; 53                             ;
@@ -338,7 +338,7 @@ The pin-out file can be found in M:/ECE287/game/output_files/game.pin.
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clk      ; Y2    ; 2        ; 0            ; 36           ; 14           ; 300                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; clk      ; Y2    ; 2        ; 0            ; 36           ; 14           ; 301                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; lbutton  ; R24   ; 5        ; 115          ; 35           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; ps2_clk  ; G6    ; 1        ; 0            ; 67           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; ps2_data ; H5    ; 1        ; 0            ; 59           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
@@ -1390,9 +1390,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; red[1]    ; Incomplete set of assignments ;
 ; red[0]    ; Incomplete set of assignments ;
 ; clk       ; Incomplete set of assignments ;
+; sbutton   ; Incomplete set of assignments ;
 ; lbutton   ; Incomplete set of assignments ;
 ; rbutton   ; Incomplete set of assignments ;
-; sbutton   ; Incomplete set of assignments ;
 ; ps2_clk   ; Incomplete set of assignments ;
 ; ps2_data  ; Incomplete set of assignments ;
 +-----------+-------------------------------+
@@ -1403,11 +1403,17 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 ; Compilation Hierarchy Node                  ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                           ; Entity Name                  ; Library Name ;
 +---------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |game                                       ; 4152 (0)    ; 361 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 77   ; 0            ; 3791 (0)     ; 50 (0)            ; 311 (0)          ; |game                                                                                                                         ; game                         ; work         ;
+; |game                                       ; 4860 (0)    ; 362 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 77   ; 0            ; 4498 (0)     ; 37 (0)            ; 325 (0)          ; |game                                                                                                                         ; game                         ; work         ;
 ;    |altpll0:inst6|                          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |game|altpll0:inst6                                                                                                           ; altpll0                      ; altpll0      ;
 ;       |altpll0_altpll_0:altpll_0|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |game|altpll0:inst6|altpll0_altpll_0:altpll_0                                                                                 ; altpll0_altpll_0             ; altpll0      ;
 ;          |altpll0_altpll_0_altpll_id42:sd1| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |game|altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1                                                ; altpll0_altpll_0_altpll_id42 ; altpll0      ;
-;    |hw_image_generator:inst|                ; 3988 (3252) ; 252 (252)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3731 (2995)  ; 20 (20)           ; 237 (237)        ; |game|hw_image_generator:inst                                                                                                 ; hw_image_generator           ; work         ;
+;    |hw_image_generator:inst|                ; 4701 (3693) ; 253 (253)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4432 (3424)  ; 11 (11)           ; 258 (258)        ; |game|hw_image_generator:inst                                                                                                 ; hw_image_generator           ; work         ;
+;       |HEX_DISPLAY:HD0|                     ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD0                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD1|                     ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD1                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD2|                     ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD2                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD4|                     ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD4                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD5|                     ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD5                                                                                 ; HEX_DISPLAY                  ; work         ;
+;       |HEX_DISPLAY:HD6|                     ; 21 (21)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|HEX_DISPLAY:HD6                                                                                 ; HEX_DISPLAY                  ; work         ;
 ;       |lpm_divide:Div0|                     ; 82 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Div0                                                                                 ; lpm_divide                   ; work         ;
 ;          |lpm_divide_sim:auto_generated|    ; 82 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Div0|lpm_divide_sim:auto_generated                                                   ; lpm_divide_sim               ; work         ;
 ;             |sign_div_unsign_klh:divider|   ; 82 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Div0|lpm_divide_sim:auto_generated|sign_div_unsign_klh:divider                       ; sign_div_unsign_klh          ; work         ;
@@ -1424,26 +1430,30 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |lpm_divide_vim:auto_generated|    ; 69 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 69 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Div3|lpm_divide_vim:auto_generated                                                   ; lpm_divide_vim               ; work         ;
 ;             |sign_div_unsign_nlh:divider|   ; 69 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 69 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Div3|lpm_divide_vim:auto_generated|sign_div_unsign_nlh:divider                       ; sign_div_unsign_nlh          ; work         ;
 ;                |alt_u_div_27f:divider|      ; 69 (69)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 69 (69)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Div3|lpm_divide_vim:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_27f:divider ; alt_u_div_27f                ; work         ;
-;       |lpm_divide:Mod0|                     ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod0                                                                                 ; lpm_divide                   ; work         ;
-;          |lpm_divide_ccm:auto_generated|    ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
-;             |sign_div_unsign_1nh:divider|   ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
-;                |alt_u_div_m9f:divider|      ; 130 (130)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (130)    ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
-;       |lpm_divide:Mod1|                     ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod1                                                                                 ; lpm_divide                   ; work         ;
-;          |lpm_divide_ccm:auto_generated|    ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
-;             |sign_div_unsign_1nh:divider|   ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
-;                |alt_u_div_m9f:divider|      ; 87 (87)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (87)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
-;       |lpm_divide:Mod2|                     ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod2                                                                                 ; lpm_divide                   ; work         ;
-;          |lpm_divide_ccm:auto_generated|    ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
-;             |sign_div_unsign_1nh:divider|   ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
-;                |alt_u_div_m9f:divider|      ; 130 (130)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (130)    ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
-;       |lpm_divide:Mod3|                     ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod3                                                                                 ; lpm_divide                   ; work         ;
-;          |lpm_divide_ccm:auto_generated|    ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
-;             |sign_div_unsign_1nh:divider|   ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
-;                |alt_u_div_m9f:divider|      ; 87 (87)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (87)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
-;    |ps2_keyboard:inst2|                     ; 87 (39)     ; 58 (34)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (5)       ; 19 (14)           ; 39 (20)          ; |game|ps2_keyboard:inst2                                                                                                      ; ps2_keyboard                 ; work         ;
+;       |lpm_divide:Mod0|                     ; 146 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 146 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod0                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 146 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 146 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 146 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 146 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 146 (146)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 146 (146)    ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod0|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;       |lpm_divide:Mod1|                     ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod1                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 130 (130)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (130)    ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod1|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;       |lpm_divide:Mod2|                     ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod2                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 87 (87)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (87)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod2|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;       |lpm_divide:Mod3|                     ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod3                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 130 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (0)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 130 (130)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 130 (130)    ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod3|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;       |lpm_divide:Mod4|                     ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod4                                                                                 ; lpm_divide                   ; work         ;
+;          |lpm_divide_ccm:auto_generated|    ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated                                                   ; lpm_divide_ccm               ; work         ;
+;             |sign_div_unsign_1nh:divider|   ; 87 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (0)       ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider                       ; sign_div_unsign_1nh          ; work         ;
+;                |alt_u_div_m9f:divider|      ; 87 (87)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 87 (87)      ; 0 (0)             ; 0 (0)            ; |game|hw_image_generator:inst|lpm_divide:Mod4|lpm_divide_ccm:auto_generated|sign_div_unsign_1nh:divider|alt_u_div_m9f:divider ; alt_u_div_m9f                ; work         ;
+;    |ps2_keyboard:inst2|                     ; 88 (40)     ; 58 (34)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (6)       ; 22 (16)           ; 36 (18)          ; |game|ps2_keyboard:inst2                                                                                                      ; ps2_keyboard                 ; work         ;
 ;       |debounce:debounce_ps2_clk|           ; 24 (24)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 3 (3)             ; 9 (9)            ; |game|ps2_keyboard:inst2|debounce:debounce_ps2_clk                                                                            ; debounce                     ; work         ;
-;       |debounce:debounce_ps2_data|          ; 24 (24)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 2 (2)             ; 10 (10)          ; |game|ps2_keyboard:inst2|debounce:debounce_ps2_data                                                                           ; debounce                     ; work         ;
-;    |vga_controller:inst1|                   ; 82 (82)     ; 51 (51)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 31 (31)      ; 11 (11)           ; 40 (40)          ; |game|vga_controller:inst1                                                                                                    ; vga_controller               ; work         ;
+;       |debounce:debounce_ps2_data|          ; 24 (24)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 3 (3)             ; 9 (9)            ; |game|ps2_keyboard:inst2|debounce:debounce_ps2_data                                                                           ; debounce                     ; work         ;
+;    |vga_controller:inst1|                   ; 87 (87)     ; 51 (51)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 36 (36)      ; 4 (4)             ; 47 (47)          ; |game|vga_controller:inst1                                                                                                    ; vga_controller               ; work         ;
 +---------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1525,11 +1535,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; red[1]    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; red[0]    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; clk       ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; lbutton   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; rbutton   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; sbutton   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; ps2_clk   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; ps2_data  ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; lbutton   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; rbutton   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; ps2_clk   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; ps2_data  ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +-----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1539,50 +1549,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                            ; Pad To Core Index ; Setting ;
 +------------------------------------------------+-------------------+---------+
 ; clk                                            ;                   ;         ;
-; lbutton                                        ;                   ;         ;
-;      - hw_image_generator:inst|GAME~6          ; 0                 ; 6       ;
-;      - hw_image_generator:inst|x[15]~2         ; 0                 ; 6       ;
-; rbutton                                        ;                   ;         ;
-;      - hw_image_generator:inst|GAME~6          ; 0                 ; 6       ;
-;      - hw_image_generator:inst|x[15]~2         ; 0                 ; 6       ;
 ; sbutton                                        ;                   ;         ;
 ;      - hw_image_generator:inst|state.STANDBY~0 ; 1                 ; 6       ;
+; lbutton                                        ;                   ;         ;
+;      - hw_image_generator:inst|GAME~6          ; 1                 ; 6       ;
+;      - hw_image_generator:inst|x[31]~47        ; 1                 ; 6       ;
+; rbutton                                        ;                   ;         ;
+;      - hw_image_generator:inst|GAME~6          ; 0                 ; 6       ;
+;      - hw_image_generator:inst|x[31]~47        ; 0                 ; 6       ;
 ; ps2_clk                                        ;                   ;         ;
-;      - ps2_keyboard:inst2|sync_ffs[0]~feeder   ; 0                 ; 6       ;
+;      - ps2_keyboard:inst2|sync_ffs[0]          ; 1                 ; 6       ;
 ; ps2_data                                       ;                   ;         ;
-;      - ps2_keyboard:inst2|sync_ffs[1]~feeder   ; 1                 ; 6       ;
+;      - ps2_keyboard:inst2|sync_ffs[1]~feeder   ; 0                 ; 6       ;
 +------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                                                                 ;
-+-------------------------------------------------------------------------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                                      ; Location           ; Fan-Out ; Usage                                 ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------------------------------------------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
-; altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1|wire_pll7_clk[0] ; PLL_1              ; 52      ; Clock                                 ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; clk                                                                                       ; PIN_Y2             ; 126     ; Clock                                 ; no     ; --                   ; --               ; --                        ;
-; clk                                                                                       ; PIN_Y2             ; 175     ; Clock                                 ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; hw_image_generator:inst|Equal4~10                                                         ; LCCOMB_X21_Y41_N0  ; 11      ; Latch enable                          ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-; hw_image_generator:inst|Equal5~10                                                         ; LCCOMB_X13_Y37_N26 ; 11      ; Latch enable                          ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; hw_image_generator:inst|Equal6~10                                                         ; LCCOMB_X19_Y34_N28 ; 11      ; Latch enable                          ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; hw_image_generator:inst|Equal7~10                                                         ; LCCOMB_X24_Y36_N8  ; 11      ; Latch enable                          ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; hw_image_generator:inst|LessThan27~5                                                      ; LCCOMB_X25_Y28_N26 ; 36      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; hw_image_generator:inst|LessThan61~1                                                      ; LCCOMB_X28_Y42_N14 ; 10      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; hw_image_generator:inst|bestscore[9]~0                                                    ; LCCOMB_X34_Y28_N20 ; 10      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; hw_image_generator:inst|gameover                                                          ; FF_X29_Y43_N9      ; 291     ; Clock enable, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; hw_image_generator:inst|score[9]~12                                                       ; LCCOMB_X26_Y34_N28 ; 10      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; hw_image_generator:inst|score[9]~16                                                       ; LCCOMB_X26_Y34_N4  ; 10      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; hw_image_generator:inst|x[15]~3                                                           ; LCCOMB_X28_Y49_N30 ; 31      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; hw_image_generator:inst|y1[29]~0                                                          ; LCCOMB_X24_Y43_N14 ; 128     ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; hw_image_generator:inst|y[26]~12                                                          ; LCCOMB_X28_Y40_N30 ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; ps2_keyboard:inst2|count_idle[10]~14                                                      ; LCCOMB_X33_Y53_N2  ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result                                       ; FF_X38_Y67_N1      ; 15      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result                                       ; FF_X38_Y67_N1      ; 11      ; Clock                                 ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; ps2_keyboard:inst2|process_2~4                                                            ; LCCOMB_X29_Y49_N12 ; 9       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; ps2_keyboard:inst2|ps2_code_new                                                           ; FF_X28_Y49_N1      ; 8       ; Latch enable                          ; yes    ; Global Clock         ; GCLK14           ; --                        ;
-; vga_controller:inst1|LessThan6~1                                                          ; LCCOMB_X24_Y45_N30 ; 14      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; vga_controller:inst1|LessThan7~4                                                          ; LCCOMB_X19_Y45_N16 ; 12      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-+-------------------------------------------------------------------------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                                                     ;
++-------------------------------------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                                      ; Location           ; Fan-Out ; Usage                     ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++-------------------------------------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
+; altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1|wire_pll7_clk[0] ; PLL_1              ; 52      ; Clock                     ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; clk                                                                                       ; PIN_Y2             ; 127     ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; clk                                                                                       ; PIN_Y2             ; 175     ; Clock                     ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; hw_image_generator:inst|LessThan35~4                                                      ; LCCOMB_X47_Y38_N30 ; 155     ; Clock enable, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; hw_image_generator:inst|RANDOMX~19                                                        ; LCCOMB_X24_Y33_N2  ; 11      ; Latch enable              ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; hw_image_generator:inst|RANDOMX~29                                                        ; LCCOMB_X23_Y34_N22 ; 11      ; Latch enable              ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; hw_image_generator:inst|RANDOMX~39                                                        ; LCCOMB_X27_Y41_N0  ; 11      ; Latch enable              ; yes    ; Global Clock         ; GCLK14           ; --                        ;
+; hw_image_generator:inst|RANDOMX~9                                                         ; LCCOMB_X23_Y41_N30 ; 11      ; Latch enable              ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; hw_image_generator:inst|bestscore[9]~4                                                    ; LCCOMB_X47_Y34_N30 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; hw_image_generator:inst|c[0]~0                                                            ; LCCOMB_X41_Y43_N30 ; 8       ; Latch enable              ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; hw_image_generator:inst|prevbar[0]~2                                                      ; LCCOMB_X43_Y37_N2  ; 3       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; hw_image_generator:inst|score[9]~4                                                        ; LCCOMB_X42_Y37_N28 ; 15      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; hw_image_generator:inst|state.STANDBY_7475                                                ; LCCOMB_X31_Y37_N6  ; 219     ; Sync. clear, Sync. load   ; no     ; --                   ; --               ; --                        ;
+; hw_image_generator:inst|x[31]~49                                                          ; LCCOMB_X40_Y43_N0  ; 31      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; hw_image_generator:inst|y[31]~3                                                           ; LCCOMB_X36_Y38_N30 ; 32      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; ps2_keyboard:inst2|count_idle[0]~14                                                       ; LCCOMB_X43_Y51_N30 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result                                       ; FF_X47_Y65_N5      ; 15      ; Sync. clear               ; no     ; --                   ; --               ; --                        ;
+; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result                                       ; FF_X47_Y65_N5      ; 11      ; Clock                     ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; ps2_keyboard:inst2|process_2~5                                                            ; LCCOMB_X42_Y43_N12 ; 9       ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; vga_controller:inst1|LessThan6~1                                                          ; LCCOMB_X39_Y36_N10 ; 14      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
+; vga_controller:inst1|LessThan7~2                                                          ; LCCOMB_X38_Y40_N28 ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
++-------------------------------------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1590,14 +1598,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                                                                      ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1|wire_pll7_clk[0] ; PLL_1              ; 52      ; 3                                    ; Global Clock         ; GCLK3            ; --                        ;
-; clk                                                                                       ; PIN_Y2             ; 175     ; 45                                   ; Global Clock         ; GCLK4            ; --                        ;
-; hw_image_generator:inst|Equal4~10                                                         ; LCCOMB_X21_Y41_N0  ; 11      ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
-; hw_image_generator:inst|Equal5~10                                                         ; LCCOMB_X13_Y37_N26 ; 11      ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
-; hw_image_generator:inst|Equal6~10                                                         ; LCCOMB_X19_Y34_N28 ; 11      ; 0                                    ; Global Clock         ; GCLK1            ; --                        ;
-; hw_image_generator:inst|Equal7~10                                                         ; LCCOMB_X24_Y36_N8  ; 11      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
-; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result                                       ; FF_X38_Y67_N1      ; 11      ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
-; ps2_keyboard:inst2|ps2_code_new                                                           ; FF_X28_Y49_N1      ; 8       ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
+; altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1|wire_pll7_clk[0] ; PLL_1              ; 52      ; 15                                   ; Global Clock         ; GCLK3            ; --                        ;
+; clk                                                                                       ; PIN_Y2             ; 175     ; 24                                   ; Global Clock         ; GCLK4            ; --                        ;
+; hw_image_generator:inst|RANDOMX~19                                                        ; LCCOMB_X24_Y33_N2  ; 11      ; 0                                    ; Global Clock         ; GCLK2            ; --                        ;
+; hw_image_generator:inst|RANDOMX~29                                                        ; LCCOMB_X23_Y34_N22 ; 11      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
+; hw_image_generator:inst|RANDOMX~39                                                        ; LCCOMB_X27_Y41_N0  ; 11      ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
+; hw_image_generator:inst|RANDOMX~9                                                         ; LCCOMB_X23_Y41_N30 ; 11      ; 0                                    ; Global Clock         ; GCLK1            ; --                        ;
+; hw_image_generator:inst|c[0]~0                                                            ; LCCOMB_X41_Y43_N30 ; 8       ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
+; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result                                       ; FF_X47_Y65_N5      ; 11      ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
 +-------------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1606,50 +1614,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+---------------------------+
 ; Routing Resource Type ; Usage                     ;
 +-----------------------+---------------------------+
-; Block interconnects   ; 5,724 / 342,891 ( 2 % )   ;
-; C16 interconnects     ; 90 / 10,120 ( < 1 % )     ;
-; C4 interconnects      ; 3,284 / 209,544 ( 2 % )   ;
-; Direct links          ; 1,185 / 342,891 ( < 1 % ) ;
+; Block interconnects   ; 7,016 / 342,891 ( 2 % )   ;
+; C16 interconnects     ; 103 / 10,120 ( 1 % )      ;
+; C4 interconnects      ; 3,948 / 209,544 ( 2 % )   ;
+; Direct links          ; 1,441 / 342,891 ( < 1 % ) ;
 ; Global clocks         ; 8 / 20 ( 40 % )           ;
-; Local interconnects   ; 1,182 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 135 / 9,963 ( 1 % )       ;
-; R4 interconnects      ; 3,776 / 289,782 ( 1 % )   ;
+; Local interconnects   ; 1,370 / 119,088 ( 1 % )   ;
+; R24 interconnects     ; 171 / 9,963 ( 2 % )       ;
+; R4 interconnects      ; 4,568 / 289,782 ( 2 % )   ;
 +-----------------------+---------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 12.98) ; Number of LABs  (Total = 320) ;
+; Number of Logic Elements  (Average = 13.21) ; Number of LABs  (Total = 368) ;
 +---------------------------------------------+-------------------------------+
 ; 1                                           ; 24                            ;
-; 2                                           ; 13                            ;
-; 3                                           ; 8                             ;
-; 4                                           ; 7                             ;
-; 5                                           ; 1                             ;
-; 6                                           ; 4                             ;
-; 7                                           ; 5                             ;
-; 8                                           ; 2                             ;
-; 9                                           ; 2                             ;
-; 10                                          ; 1                             ;
-; 11                                          ; 10                            ;
-; 12                                          ; 5                             ;
-; 13                                          ; 1                             ;
-; 14                                          ; 6                             ;
-; 15                                          ; 21                            ;
-; 16                                          ; 210                           ;
+; 2                                           ; 6                             ;
+; 3                                           ; 7                             ;
+; 4                                           ; 6                             ;
+; 5                                           ; 3                             ;
+; 6                                           ; 7                             ;
+; 7                                           ; 4                             ;
+; 8                                           ; 4                             ;
+; 9                                           ; 6                             ;
+; 10                                          ; 6                             ;
+; 11                                          ; 12                            ;
+; 12                                          ; 7                             ;
+; 13                                          ; 4                             ;
+; 14                                          ; 18                            ;
+; 15                                          ; 36                            ;
+; 16                                          ; 218                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.54) ; Number of LABs  (Total = 320) ;
+; LAB-wide Signals  (Average = 0.40) ; Number of LABs  (Total = 368) ;
 +------------------------------------+-------------------------------+
-; 1 Clock                            ; 75                            ;
-; 1 Clock enable                     ; 52                            ;
-; 1 Sync. clear                      ; 34                            ;
-; 1 Sync. load                       ; 10                            ;
+; 1 Clock                            ; 70                            ;
+; 1 Clock enable                     ; 45                            ;
+; 1 Sync. clear                      ; 24                            ;
+; 1 Sync. load                       ; 4                             ;
+; 2 Clock enables                    ; 2                             ;
 ; 2 Clocks                           ; 1                             ;
 +------------------------------------+-------------------------------+
 
@@ -1657,123 +1666,116 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 11.74) ; Number of LABs  (Total = 320) ;
+; Number of Signals Sourced  (Average = 11.33) ; Number of LABs  (Total = 368) ;
 +----------------------------------------------+-------------------------------+
-; 0                                            ; 16                            ;
-; 1                                            ; 45                            ;
-; 2                                            ; 13                            ;
-; 3                                            ; 11                            ;
+; 0                                            ; 24                            ;
+; 1                                            ; 53                            ;
+; 2                                            ; 9                             ;
+; 3                                            ; 9                             ;
 ; 4                                            ; 7                             ;
-; 5                                            ; 6                             ;
-; 6                                            ; 4                             ;
-; 7                                            ; 4                             ;
-; 8                                            ; 2                             ;
-; 9                                            ; 3                             ;
-; 10                                           ; 8                             ;
-; 11                                           ; 5                             ;
-; 12                                           ; 3                             ;
-; 13                                           ; 1                             ;
-; 14                                           ; 8                             ;
-; 15                                           ; 25                            ;
-; 16                                           ; 107                           ;
+; 5                                            ; 7                             ;
+; 6                                            ; 7                             ;
+; 7                                            ; 6                             ;
+; 8                                            ; 6                             ;
+; 9                                            ; 4                             ;
+; 10                                           ; 12                            ;
+; 11                                           ; 3                             ;
+; 12                                           ; 5                             ;
+; 13                                           ; 5                             ;
+; 14                                           ; 21                            ;
+; 15                                           ; 34                            ;
+; 16                                           ; 106                           ;
 ; 17                                           ; 14                            ;
-; 18                                           ; 6                             ;
-; 19                                           ; 7                             ;
-; 20                                           ; 2                             ;
-; 21                                           ; 2                             ;
-; 22                                           ; 0                             ;
+; 18                                           ; 5                             ;
+; 19                                           ; 3                             ;
+; 20                                           ; 1                             ;
+; 21                                           ; 5                             ;
+; 22                                           ; 3                             ;
 ; 23                                           ; 5                             ;
-; 24                                           ; 2                             ;
-; 25                                           ; 1                             ;
-; 26                                           ; 2                             ;
+; 24                                           ; 5                             ;
+; 25                                           ; 2                             ;
+; 26                                           ; 1                             ;
 ; 27                                           ; 1                             ;
-; 28                                           ; 5                             ;
-; 29                                           ; 4                             ;
-; 30                                           ; 0                             ;
-; 31                                           ; 0                             ;
-; 32                                           ; 1                             ;
+; 28                                           ; 1                             ;
+; 29                                           ; 0                             ;
+; 30                                           ; 2                             ;
+; 31                                           ; 2                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 8.21) ; Number of LABs  (Total = 320) ;
+; Number of Signals Sourced Out  (Average = 7.97) ; Number of LABs  (Total = 368) ;
 +-------------------------------------------------+-------------------------------+
-; 0                                               ; 16                            ;
-; 1                                               ; 60                            ;
+; 0                                               ; 24                            ;
+; 1                                               ; 64                            ;
 ; 2                                               ; 19                            ;
-; 3                                               ; 23                            ;
-; 4                                               ; 18                            ;
-; 5                                               ; 11                            ;
+; 3                                               ; 31                            ;
+; 4                                               ; 12                            ;
+; 5                                               ; 16                            ;
 ; 6                                               ; 4                             ;
-; 7                                               ; 8                             ;
+; 7                                               ; 14                            ;
 ; 8                                               ; 12                            ;
 ; 9                                               ; 14                            ;
-; 10                                              ; 5                             ;
-; 11                                              ; 8                             ;
-; 12                                              ; 11                            ;
-; 13                                              ; 11                            ;
-; 14                                              ; 6                             ;
-; 15                                              ; 13                            ;
-; 16                                              ; 67                            ;
+; 10                                              ; 19                            ;
+; 11                                              ; 10                            ;
+; 12                                              ; 9                             ;
+; 13                                              ; 12                            ;
+; 14                                              ; 14                            ;
+; 15                                              ; 21                            ;
+; 16                                              ; 60                            ;
 ; 17                                              ; 8                             ;
-; 18                                              ; 2                             ;
-; 19                                              ; 0                             ;
-; 20                                              ; 1                             ;
-; 21                                              ; 0                             ;
-; 22                                              ; 0                             ;
-; 23                                              ; 0                             ;
-; 24                                              ; 1                             ;
-; 25                                              ; 1                             ;
-; 26                                              ; 0                             ;
-; 27                                              ; 1                             ;
+; 18                                              ; 3                             ;
+; 19                                              ; 1                             ;
+; 20                                              ; 0                             ;
+; 21                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 17.23) ; Number of LABs  (Total = 320) ;
+; Number of Distinct Inputs  (Average = 18.32) ; Number of LABs  (Total = 368) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
-; 2                                            ; 18                            ;
-; 3                                            ; 6                             ;
-; 4                                            ; 21                            ;
+; 2                                            ; 23                            ;
+; 3                                            ; 7                             ;
+; 4                                            ; 13                            ;
 ; 5                                            ; 8                             ;
-; 6                                            ; 4                             ;
-; 7                                            ; 10                            ;
-; 8                                            ; 8                             ;
-; 9                                            ; 4                             ;
+; 6                                            ; 8                             ;
+; 7                                            ; 4                             ;
+; 8                                            ; 6                             ;
+; 9                                            ; 8                             ;
 ; 10                                           ; 4                             ;
 ; 11                                           ; 5                             ;
-; 12                                           ; 12                            ;
-; 13                                           ; 5                             ;
-; 14                                           ; 7                             ;
-; 15                                           ; 18                            ;
-; 16                                           ; 25                            ;
-; 17                                           ; 40                            ;
-; 18                                           ; 7                             ;
-; 19                                           ; 4                             ;
-; 20                                           ; 9                             ;
-; 21                                           ; 10                            ;
-; 22                                           ; 12                            ;
-; 23                                           ; 6                             ;
-; 24                                           ; 1                             ;
-; 25                                           ; 6                             ;
-; 26                                           ; 3                             ;
+; 12                                           ; 8                             ;
+; 13                                           ; 7                             ;
+; 14                                           ; 12                            ;
+; 15                                           ; 19                            ;
+; 16                                           ; 27                            ;
+; 17                                           ; 38                            ;
+; 18                                           ; 13                            ;
+; 19                                           ; 9                             ;
+; 20                                           ; 13                            ;
+; 21                                           ; 11                            ;
+; 22                                           ; 18                            ;
+; 23                                           ; 2                             ;
+; 24                                           ; 5                             ;
+; 25                                           ; 4                             ;
+; 26                                           ; 5                             ;
 ; 27                                           ; 7                             ;
-; 28                                           ; 1                             ;
-; 29                                           ; 3                             ;
-; 30                                           ; 6                             ;
-; 31                                           ; 1                             ;
-; 32                                           ; 17                            ;
-; 33                                           ; 20                            ;
-; 34                                           ; 3                             ;
-; 35                                           ; 4                             ;
+; 28                                           ; 4                             ;
+; 29                                           ; 4                             ;
+; 30                                           ; 8                             ;
+; 31                                           ; 3                             ;
+; 32                                           ; 29                            ;
+; 33                                           ; 26                            ;
+; 34                                           ; 6                             ;
+; 35                                           ; 1                             ;
 ; 36                                           ; 2                             ;
-; 37                                           ; 3                             ;
+; 37                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -1910,9 +1912,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; red[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; red[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sbutton            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; lbutton            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; rbutton            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sbutton            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; ps2_clk            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; ps2_data           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
@@ -1954,18 +1956,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                                                                                 ;
-+-----------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+
-; Source Clock(s) ; Destination Clock(s)                                                                                                    ; Delay Added in ns ;
-+-----------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+
-; clk             ; clk                                                                                                                     ; 137.0             ;
-; clk             ; hw_image_generator:inst|y1[0]                                                                                           ; 78.7              ;
-; clk             ; hw_image_generator:inst|y3[0]                                                                                           ; 49.0              ;
-; clk             ; hw_image_generator:inst|y2[0]                                                                                           ; 41.0              ;
-; clk             ; hw_image_generator:inst|y4[0]                                                                                           ; 38.5              ;
-; clk             ; hw_image_generator:inst|y1[0],hw_image_generator:inst|y2[0],hw_image_generator:inst|y3[0],hw_image_generator:inst|y4[0] ; 15.7              ;
-+-----------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                                                                                                          ;
++--------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Clock(s)                      ; Destination Clock(s)                                                                                                        ; Delay Added in ns ;
++--------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------+
+; hw_image_generator:inst|c[0],I/O     ; clk                                                                                                                         ; 72.5              ;
+; clk                                  ; hw_image_generator:inst|y4[10]                                                                                              ; 72.3              ;
+; clk                                  ; hw_image_generator:inst|y1[10],hw_image_generator:inst|y2[10],hw_image_generator:inst|y3[10],hw_image_generator:inst|y4[10] ; 50.5              ;
+; clk,hw_image_generator:inst|c[0],I/O ; clk                                                                                                                         ; 49.6              ;
+; clk                                  ; hw_image_generator:inst|y2[10]                                                                                              ; 32.8              ;
+; clk                                  ; clk                                                                                                                         ; 32.7              ;
+; clk                                  ; hw_image_generator:inst|y1[10]                                                                                              ; 31.7              ;
+; clk                                  ; hw_image_generator:inst|y3[10]                                                                                              ; 28.1              ;
+; clk                                  ; hw_image_generator:inst|c[0]                                                                                                ; 15.8              ;
++--------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
@@ -1975,106 +1980,106 @@ This will disable optimization of problematic paths and expose them for further 
 +-------------------------------------------------------------+-----------------------------------------------------+-------------------+
 ; Source Register                                             ; Destination Register                                ; Delay Added in ns ;
 +-------------------------------------------------------------+-----------------------------------------------------+-------------------+
-; hw_image_generator:inst|rand[1]                             ; hw_image_generator:inst|x1[1]                       ; 4.860             ;
-; hw_image_generator:inst|gameover                            ; hw_image_generator:inst|x1[1]                       ; 4.679             ;
-; hw_image_generator:inst|rand[0]                             ; hw_image_generator:inst|x1[0]                       ; 4.604             ;
-; hw_image_generator:inst|rand[6]                             ; hw_image_generator:inst|x1[6]                       ; 4.553             ;
-; hw_image_generator:inst|rand[8]                             ; hw_image_generator:inst|x1[8]                       ; 4.543             ;
-; hw_image_generator:inst|rand[5]                             ; hw_image_generator:inst|x1[6]                       ; 4.470             ;
-; hw_image_generator:inst|rand[7]                             ; hw_image_generator:inst|x1[8]                       ; 4.453             ;
-; hw_image_generator:inst|rand[4]                             ; hw_image_generator:inst|x1[6]                       ; 4.422             ;
-; hw_image_generator:inst|rand[3]                             ; hw_image_generator:inst|x1[6]                       ; 4.343             ;
-; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result         ; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result ; 4.272             ;
-; hw_image_generator:inst|rand[2]                             ; hw_image_generator:inst|x1[6]                       ; 4.140             ;
-; hw_image_generator:inst|rand[9]                             ; hw_image_generator:inst|x1[9]                       ; 3.984             ;
-; hw_image_generator:inst|y1[0]                               ; hw_image_generator:inst|y1[0]                       ; 2.523             ;
-; hw_image_generator:inst|state.EASY_8109                     ; hw_image_generator:inst|y1[0]                       ; 2.496             ;
-; hw_image_generator:inst|speed[2]                            ; hw_image_generator:inst|y1[0]                       ; 2.496             ;
-; hw_image_generator:inst|y4[0]                               ; hw_image_generator:inst|y1[0]                       ; 2.355             ;
-; ps2_keyboard:inst2|debounce:debounce_ps2_clk|flipflops[1]   ; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result ; 2.136             ;
-; ps2_keyboard:inst2|debounce:debounce_ps2_clk|flipflops[0]   ; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result ; 2.136             ;
-; ps2_keyboard:inst2|debounce:debounce_ps2_clk|counter_out[8] ; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result ; 2.136             ;
-; hw_image_generator:inst|y2[0]                               ; hw_image_generator:inst|y2[0]                       ; 1.875             ;
-; hw_image_generator:inst|state.HARD_8087                     ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y1[8]                               ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y1[7]                               ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y1[6]                               ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y1[5]                               ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y1[4]                               ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y1[3]                               ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y1[1]                               ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|speedy[4]                           ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y1[2]                               ; hw_image_generator:inst|y1[8]                       ; 1.525             ;
-; hw_image_generator:inst|y3[0]                               ; hw_image_generator:inst|y[0]                        ; 1.425             ;
-; hw_image_generator:inst|y2[1]                               ; hw_image_generator:inst|y2[0]                       ; 1.400             ;
-; hw_image_generator:inst|y2[2]                               ; hw_image_generator:inst|y2[0]                       ; 1.400             ;
-; ps2_keyboard:inst2|ps2_code[5]                              ; hw_image_generator:inst|c[5]                        ; 1.227             ;
-; ps2_keyboard:inst2|ps2_code[6]                              ; hw_image_generator:inst|c[6]                        ; 1.227             ;
-; ps2_keyboard:inst2|ps2_code[0]                              ; hw_image_generator:inst|c[0]                        ; 1.227             ;
-; ps2_keyboard:inst2|ps2_code[3]                              ; hw_image_generator:inst|c[3]                        ; 1.227             ;
-; ps2_keyboard:inst2|ps2_code[2]                              ; hw_image_generator:inst|c[2]                        ; 1.227             ;
-; hw_image_generator:inst|y2[30]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[29]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[28]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[27]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[26]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[25]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[24]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[23]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[22]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[21]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[20]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[19]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[18]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[17]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[16]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[15]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[14]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[13]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[12]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[11]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[10]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[9]                               ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[8]                               ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[7]                               ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[6]                               ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[5]                               ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[4]                               ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[3]                               ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y2[31]                              ; hw_image_generator:inst|y2[0]                       ; 1.186             ;
-; hw_image_generator:inst|y4[1]                               ; hw_image_generator:inst|y[2]                        ; 1.153             ;
-; hw_image_generator:inst|y4[2]                               ; hw_image_generator:inst|y[2]                        ; 1.153             ;
-; hw_image_generator:inst|y1[30]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[29]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[28]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[27]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[26]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[25]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[24]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[23]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[22]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[21]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[20]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[19]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[18]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[17]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[16]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[15]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[14]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[13]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[12]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[11]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[10]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[9]                               ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; hw_image_generator:inst|y1[31]                              ; hw_image_generator:inst|y1[0]                       ; 1.140             ;
-; ps2_keyboard:inst2|count_idle[11]                           ; ps2_keyboard:inst2|count_idle[0]                    ; 1.120             ;
-; ps2_keyboard:inst2|count_idle[9]                            ; ps2_keyboard:inst2|count_idle[0]                    ; 1.120             ;
-; ps2_keyboard:inst2|count_idle[8]                            ; ps2_keyboard:inst2|count_idle[0]                    ; 1.120             ;
-; ps2_keyboard:inst2|count_idle[6]                            ; ps2_keyboard:inst2|count_idle[0]                    ; 1.120             ;
-; ps2_keyboard:inst2|count_idle[7]                            ; ps2_keyboard:inst2|count_idle[0]                    ; 1.120             ;
-; ps2_keyboard:inst2|count_idle[4]                            ; ps2_keyboard:inst2|count_idle[0]                    ; 1.120             ;
-; ps2_keyboard:inst2|count_idle[3]                            ; ps2_keyboard:inst2|count_idle[0]                    ; 1.120             ;
-; ps2_keyboard:inst2|count_idle[2]                            ; ps2_keyboard:inst2|count_idle[0]                    ; 1.120             ;
+; hw_image_generator:inst|gameover                            ; hw_image_generator:inst|x4[4]                       ; 5.918             ;
+; hw_image_generator:inst|rand[3]                             ; hw_image_generator:inst|x4[4]                       ; 5.041             ;
+; hw_image_generator:inst|rand[1]                             ; hw_image_generator:inst|x4[1]                       ; 4.851             ;
+; hw_image_generator:inst|rand[9]                             ; hw_image_generator:inst|x4[9]                       ; 4.418             ;
+; hw_image_generator:inst|rand[0]                             ; hw_image_generator:inst|x4[0]                       ; 4.393             ;
+; hw_image_generator:inst|rand[8]                             ; hw_image_generator:inst|x4[9]                       ; 4.280             ;
+; hw_image_generator:inst|rand[2]                             ; hw_image_generator:inst|x4[9]                       ; 4.200             ;
+; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result         ; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result ; 4.174             ;
+; hw_image_generator:inst|rand[4]                             ; hw_image_generator:inst|x4[4]                       ; 4.119             ;
+; hw_image_generator:inst|rand[7]                             ; hw_image_generator:inst|x4[9]                       ; 4.078             ;
+; hw_image_generator:inst|rand[5]                             ; hw_image_generator:inst|x4[9]                       ; 3.860             ;
+; hw_image_generator:inst|rand[6]                             ; hw_image_generator:inst|x4[9]                       ; 3.857             ;
+; hw_image_generator:inst|c[5]                                ; hw_image_generator:inst|x[11]                       ; 3.262             ;
+; hw_image_generator:inst|c[6]                                ; hw_image_generator:inst|x[11]                       ; 3.262             ;
+; hw_image_generator:inst|c[0]                                ; hw_image_generator:inst|x[11]                       ; 3.262             ;
+; hw_image_generator:inst|c[3]                                ; hw_image_generator:inst|x[11]                       ; 3.262             ;
+; hw_image_generator:inst|c[4]                                ; hw_image_generator:inst|x[11]                       ; 3.262             ;
+; lbutton                                                     ; hw_image_generator:inst|x[11]                       ; 2.716             ;
+; rbutton                                                     ; hw_image_generator:inst|x[11]                       ; 2.716             ;
+; hw_image_generator:inst|c[7]                                ; hw_image_generator:inst|x[11]                       ; 2.716             ;
+; hw_image_generator:inst|c[2]                                ; hw_image_generator:inst|x[11]                       ; 2.716             ;
+; hw_image_generator:inst|c[1]                                ; hw_image_generator:inst|x[11]                       ; 2.716             ;
+; ps2_keyboard:inst2|ps2_code[6]                              ; hw_image_generator:inst|c[6]                        ; 2.523             ;
+; ps2_keyboard:inst2|ps2_code[2]                              ; hw_image_generator:inst|c[2]                        ; 2.269             ;
+; ps2_keyboard:inst2|ps2_code[1]                              ; hw_image_generator:inst|c[1]                        ; 2.269             ;
+; ps2_keyboard:inst2|ps2_code[3]                              ; hw_image_generator:inst|c[3]                        ; 2.268             ;
+; ps2_keyboard:inst2|ps2_code[7]                              ; hw_image_generator:inst|c[7]                        ; 2.168             ;
+; ps2_keyboard:inst2|ps2_code[5]                              ; hw_image_generator:inst|c[5]                        ; 2.167             ;
+; ps2_keyboard:inst2|ps2_code[4]                              ; hw_image_generator:inst|c[4]                        ; 2.167             ;
+; ps2_keyboard:inst2|debounce:debounce_ps2_clk|flipflops[1]   ; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result ; 2.087             ;
+; ps2_keyboard:inst2|debounce:debounce_ps2_clk|flipflops[0]   ; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result ; 2.087             ;
+; ps2_keyboard:inst2|debounce:debounce_ps2_clk|counter_out[8] ; ps2_keyboard:inst2|debounce:debounce_ps2_clk|result ; 2.087             ;
+; hw_image_generator:inst|y4[10]                              ; hw_image_generator:inst|y1[10]                      ; 1.805             ;
+; hw_image_generator:inst|x[10]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[8]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[5]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[3]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[4]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[6]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[7]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[9]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[28]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[27]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[26]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[25]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[24]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[23]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[22]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[21]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[20]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[19]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[18]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[17]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[16]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[15]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[14]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[13]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[12]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[30]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[31]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[2]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[11]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[1]                                ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|x[29]                               ; hw_image_generator:inst|x[28]                       ; 1.683             ;
+; hw_image_generator:inst|y1[30]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[28]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[27]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[26]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[25]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[24]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[23]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[22]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[21]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[20]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[19]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[18]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[17]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[16]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[15]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[14]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[13]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[12]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[11]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[29]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[10]                              ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[8]                               ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[7]                               ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|y1[9]                               ; hw_image_generator:inst|y1[10]                      ; 1.658             ;
+; hw_image_generator:inst|points[2]                           ; hw_image_generator:inst|x[8]                        ; 1.325             ;
+; hw_image_generator:inst|speedy[0]                           ; hw_image_generator:inst|x[8]                        ; 1.325             ;
+; hw_image_generator:inst|state.MEDIUM_7453                   ; hw_image_generator:inst|x[8]                        ; 1.325             ;
+; hw_image_generator:inst|points[3]                           ; hw_image_generator:inst|x[8]                        ; 1.325             ;
+; hw_image_generator:inst|state.STANDBY_7475                  ; hw_image_generator:inst|x[8]                        ; 1.325             ;
+; hw_image_generator:inst|y2[10]                              ; hw_image_generator:inst|y3[10]                      ; 1.267             ;
+; hw_image_generator:inst|y3[10]                              ; hw_image_generator:inst|y[10]                       ; 1.248             ;
+; hw_image_generator:inst|clk50[18]                           ; hw_image_generator:inst|x[11]                       ; 1.167             ;
+; hw_image_generator:inst|clk50[17]                           ; hw_image_generator:inst|x[11]                       ; 1.167             ;
+; hw_image_generator:inst|clk50[16]                           ; hw_image_generator:inst|x[11]                       ; 1.167             ;
+; hw_image_generator:inst|clk50[15]                           ; hw_image_generator:inst|x[11]                       ; 1.167             ;
+; hw_image_generator:inst|clk50[14]                           ; hw_image_generator:inst|x[11]                       ; 1.167             ;
 +-------------------------------------------------------------+-----------------------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
@@ -2114,6 +2119,7 @@ Warning (335093): TimeQuest Timing Analyzer is analyzing 99 combinational loops 
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'game.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained generated clocks found in the design
 Info (332144): No user constrained base clocks found in the design
+Warning (332191): Clock target hw_image_generator:inst|c[0] of clock hw_image_generator:inst|c[0] is fed by another target of the same clock.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
@@ -2122,24 +2128,24 @@ Info (176353): Automatically promoted node altpll0:inst6|altpll0_altpll_0:altpll
 Info (176353): Automatically promoted node clk~input (placed in PIN Y2 (CLK2, DIFFCLK_1p))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node hw_image_generator:inst|y4[4] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y4[5] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y4[7] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y4[10] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y3[2] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y3[7] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y3[8] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y3[9] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y2[3] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
-        Info (176357): Destination node hw_image_generator:inst|y2[4] File: M:/ECE287/game/hw_image_generator.vhd Line: 210
+        Info (176357): Destination node hw_image_generator:inst|y4[4] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y4[5] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y4[7] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y3[2] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y3[7] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y3[8] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y3[9] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y2[3] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y2[4] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
+        Info (176357): Destination node hw_image_generator:inst|y2[6] File: M:/ECE287/game/hw_image_generator.vhd Line: 262
         Info (176358): Non-global destination nodes limited to 10 nodes
-Info (176353): Automatically promoted node hw_image_generator:inst|Equal4~10  File: M:/ECE287/game/hw_image_generator.vhd Line: 377
+Info (176353): Automatically promoted node hw_image_generator:inst|RANDOMX~19 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node hw_image_generator:inst|Equal5~10  File: M:/ECE287/game/hw_image_generator.vhd Line: 381
+Info (176353): Automatically promoted node hw_image_generator:inst|RANDOMX~29 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node hw_image_generator:inst|Equal6~10  File: M:/ECE287/game/hw_image_generator.vhd Line: 385
+Info (176353): Automatically promoted node hw_image_generator:inst|RANDOMX~39 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node hw_image_generator:inst|Equal7~10  File: M:/ECE287/game/hw_image_generator.vhd Line: 389
+Info (176353): Automatically promoted node hw_image_generator:inst|RANDOMX~9 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node ps2_keyboard:inst2|debounce:debounce_ps2_clk|result  File: M:/ECE287/game/debounce.vhd Line: 33
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
@@ -2155,13 +2161,13 @@ Info (176353): Automatically promoted node ps2_keyboard:inst2|debounce:debounce_
         Info (176357): Destination node ps2_keyboard:inst2|count_idle[8] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
         Info (176357): Destination node ps2_keyboard:inst2|count_idle[9] File: M:/ECE287/game/ps2_keyboard.vhd Line: 90
         Info (176358): Non-global destination nodes limited to 10 nodes
-Info (176353): Automatically promoted node ps2_keyboard:inst2|ps2_code_new  File: M:/ECE287/game/ps2_keyboard.vhd Line: 34
+Info (176353): Automatically promoted node hw_image_generator:inst|c[0]~0  File: M:/ECE287/game/hw_image_generator.vhd Line: 93
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15064): PLL "altpll0:inst6|altpll0_altpll_0:altpll_0|altpll0_altpll_0_altpll_id42:sd1|pll7" output port clk[0] feeds output pin "pixel_clk~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance File: M:/ECE287/game/altpll0/synthesis/submodules/altpll0_altpll_0.v Line: 151
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -2170,22 +2176,22 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:08
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 1% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 25% of the available device resources in the region that extends from location X23_Y37 to location X33_Y48
+    Info (170196): Router estimated peak interconnect usage is 17% of the available device resources in the region that extends from location X23_Y37 to location X33_Y48
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:05
-Info (11888): Total time spent on timing analysis during the Fitter is 2.61 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:07
+Info (11888): Total time spent on timing analysis during the Fitter is 3.26 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file M:/ECE287/game/output_files/game.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 5775 megabytes
-    Info: Processing ended: Sun Nov 24 17:02:59 2019
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:47
+Info: Quartus Prime Fitter was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 5780 megabytes
+    Info: Processing ended: Thu Dec 05 16:58:46 2019
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:51
 
 
 +----------------------------+
