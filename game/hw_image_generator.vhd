@@ -1,3 +1,25 @@
+--------------------------------------------------------------------------------
+--
+--   FileName:         hw_image_generator.vhd
+--   Dependencies:     none
+--   Design Software:  Quartus II 64-bit Version 12.1 Build 177 SJ Full Version
+--
+--   HDL CODE IS PROVIDED "AS IS."  DIGI-KEY EXPRESSLY DISCLAIMS ANY
+--   WARRANTY OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT
+--   LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+--   PARTICULAR PURPOSE, OR NON-INFRINGEMENT. IN NO EVENT SHALL DIGI-KEY
+--   BE LIABLE FOR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL
+--   DAMAGES, LOST PROFITS OR LOST DATA, HARM TO YOUR EQUIPMENT, COST OF
+--   PROCUREMENT OF SUBSTITUTE GOODS, TECHNOLOGY OR SERVICES, ANY CLAIMS
+--   BY THIRD PARTIES (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF),
+--   ANY CLAIMS FOR INDEMNITY OR CONTRIBUTION, OR OTHER SIMILAR COSTS.
+--
+--   Version History
+--   Version 1.0 05/10/2013 Scott Larson
+--     Initial Public Release
+--    
+--------------------------------------------------------------------------------
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
@@ -5,14 +27,14 @@ USE ieee.std_logic_unsigned.all;
 
 ENTITY hw_image_generator IS
 	PORT(
-		lbutton, rbutton, sbutton, flag, clk	:	IN		STD_LOGIC; -- push buttons, 50MHz clock, ps2_new_code
-		key												:	IN		STD_LOGIC_VECTOR(7 DOWNTO 0);  -- hex code from the ps2_keyboard interface
-		disp_ena											:	IN		STD_LOGIC;	--display enable ('1' = display time, '0' = blanking time)
-		row, column										:	IN		INTEGER;		--row pixel coordinate & column pixel coordinate
-		red												:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');  --red magnitude output to DAC
-		green												:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');  --green magnitude output to DAC
-		blue												:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');  --blue magnitude output to DAC
-		hex0, hex1, hex2, hex4, hex5, hex6		:	OUT	STD_LOGIC_VECTOR(6 DOWNTO 0)); 	-- 6 hex 7 segments (0 to 2 for current score, 4 to 6 for best score)
+		lbutton, rbutton, sbutton, flag, clk				:	IN		STD_LOGIC;
+		key															:	IN		STD_LOGIC_VECTOR(7 DOWNTO 0);
+		disp_ena														:	IN		STD_LOGIC;	--display enable ('1' = display time, '0' = blanking time)
+		row, column													:	IN		INTEGER;		--row pixel coordinate & column pixel coordinate
+		red															:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');  --red magnitude output to DAC
+		green															:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');  --green magnitude output to DAC
+		blue															:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0'); --blue magnitude output to DAC
+		hex0, hex1, hex2, hex4, hex5, hex6					:	OUT	STD_LOGIC_VECTOR(6 DOWNTO 0));
 END hw_image_generator;
 
 ARCHITECTURE behavior OF hw_image_generator IS
@@ -176,12 +198,7 @@ BEGIN
 					blue <= (OTHERS => '0');
 				END IF;
 			END IF;
-			------------------------------
-			IF row < 300 OR row > 1620 THEN
-				red <= (OTHERS => '0');
-				green	<= (OTHERS => '0');
-				blue <= (OTHERS => '0');
-			END IF;
+			
 		ELSE								--blanking time
 			red <= (OTHERS => '0');
 			green <= (OTHERS => '0');
@@ -296,17 +313,17 @@ BEGIN
 					END IF;	
 					--------------------------------------------------------
 					IF (lbutton = '0' AND rbutton = '1') OR (c = lhex) THEN		-- Control x-coordinate of square
-						IF x > 250 THEN
+						IF x > 300 THEN
 							x <= x - speedx after 0 ns;
 						ELSE
-							x <= 1620;
+							x <= 300;
 						END IF;
 					END IF;
 					IF (lbutton = '1' AND rbutton = '0') OR (c = rhex) THEN
-						IF x < 1620 THEN
+						IF x < 1570 THEN
 							x <= x + speedx after 0 ns;
 						ELSE
-							x <= 300;
+							x <= 1570;
 						END IF;
 					END IF;
 					-------------------------------------------------------

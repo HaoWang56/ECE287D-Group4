@@ -105,7 +105,7 @@ agreement for further details.
 	(input)
 	(rect 1280 168 1448 184)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "sbutton" (rect 5 0 42 12)(font "Arial" ))
+	(text "sbutton" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -554,7 +554,7 @@ agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 736 488 936 600)
+	(rect 736 480 936 592)
 	(text "ps2_keyboard" (rect 5 0 74 12)(font "Arial" ))
 	(text "inst2" (rect 8 96 30 113)(font "Intel Clear" ))
 	(port
@@ -605,7 +605,7 @@ agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 184 96))
 	)
-	(annotation_block (parameter)(rect 712 424 984 488))
+	(annotation_block (parameter)(rect 712 416 984 480))
 )
 (symbol
 	(rect 1456 112 1648 320)
@@ -782,10 +782,6 @@ agreement for further details.
 	(pt 944 224)
 )
 (connector
-	(pt 936 520)
-	(pt 1208 520)
-)
-(connector
 	(pt 928 240)
 	(pt 1456 240)
 )
@@ -808,47 +804,13 @@ agreement for further details.
 	(pt 1456 192)
 )
 (connector
-	(pt 1208 520)
-	(pt 1208 192)
-)
-(connector
 	(pt 1224 224)
 	(pt 1456 224)
 	(bus)
 )
 (connector
-	(pt 936 536)
-	(pt 1224 536)
-	(bus)
-)
-(connector
-	(pt 1224 536)
-	(pt 1224 224)
-	(bus)
-)
-(connector
-	(pt 712 552)
-	(pt 736 552)
-)
-(connector
-	(pt 712 536)
-	(pt 736 536)
-)
-(connector
 	(pt 1184 96)
 	(pt 440 96)
-)
-(connector
-	(pt 736 520)
-	(pt 440 520)
-)
-(connector
-	(pt 440 96)
-	(pt 440 248)
-)
-(connector
-	(pt 440 248)
-	(pt 440 520)
 )
 (connector
 	(pt 408 248)
@@ -922,6 +884,60 @@ agreement for further details.
 (connector
 	(pt 1456 176)
 	(pt 1448 176)
+)
+(connector
+	(pt 712 536)
+	(pt 720 536)
+)
+(connector
+	(pt 712 552)
+	(pt 728 552)
+)
+(connector
+	(pt 1208 512)
+	(pt 936 512)
+)
+(connector
+	(pt 1208 192)
+	(pt 1208 512)
+)
+(connector
+	(pt 1224 528)
+	(pt 936 528)
+	(bus)
+)
+(connector
+	(pt 1224 224)
+	(pt 1224 528)
+	(bus)
+)
+(connector
+	(pt 720 536)
+	(pt 720 528)
+)
+(connector
+	(pt 720 528)
+	(pt 736 528)
+)
+(connector
+	(pt 728 552)
+	(pt 728 544)
+)
+(connector
+	(pt 728 544)
+	(pt 736 544)
+)
+(connector
+	(pt 440 512)
+	(pt 736 512)
+)
+(connector
+	(pt 440 96)
+	(pt 440 248)
+)
+(connector
+	(pt 440 248)
+	(pt 440 512)
 )
 (junction (pt 712 208))
 (junction (pt 440 248))
