@@ -280,15 +280,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "sbutton",
+					"strict" : false
+				},
+				{
 					"name" : "lbutton",
 					"strict" : false
 				},
 				{
 					"name" : "rbutton",
-					"strict" : false
-				},
-				{
-					"name" : "sbutton",
 					"strict" : false
 				},
 				{
